@@ -12,7 +12,7 @@ const Home = () => {
         </div>
         <div className = "none-text-section" >
             <h1 classBame = "primary-heading">
-
+                
             </h1>
         </div>
     </div>
