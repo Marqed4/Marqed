@@ -25,3 +25,28 @@
 .Navbar-links-container a:hover {
   color: #f0a500;
 }
+
+body {
+  background-color: bisque;
+}
+
+.details-link-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.youtube-link-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.github-link-icon {
+    width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
