@@ -8,9 +8,8 @@
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: #f0a500;
+  border: 2px #f0a500;
   border-radius: 10px;
-  outline: 2px solid rgb(0, 0, 0);
 }
 
 .Navbar-links-container a {
@@ -19,21 +18,8 @@
   text-decoration: none;
   color: black;
   font-size: 16px;
-  margin: 0 10px;
+  margin: 8.5px 10px;
   font-family: Latin;
-
-    /* background: #444;
-  border: none;
-  box-shadow:
-    inset 2px 2px 4px rgba(255,255,255,0.2),
-    inset -2px -2px 4px rgba(0,0,0,0.4);
-
-  nav ul li a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  padding: 6px 12px; optional */
 }
 
 .Navbar-links-container a:hover {
