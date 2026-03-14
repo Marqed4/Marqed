@@ -2,6 +2,7 @@ import "../Components/Home.js"
 import Navbar from "./Navbar.js"
 import bannerbackground from "../Resources/art/Background Project/Orange Glob.gif"
 import { Gif } from "@mui/icons-material";
+import { useState, useRef } from "react";
 
 const Home = () => {
   return ( 

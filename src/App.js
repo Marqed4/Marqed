@@ -1,6 +1,7 @@
 import './HomeNavbar.css';
 import './HomeBody.css';
 import './HomeBanner.css';
+import './HomeText.css';
 import Home from "./Components/Home";
 
 function App() {
