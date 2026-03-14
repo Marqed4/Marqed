@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Latin";
+  src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
+}
+
+.home-name-text-container {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+
+.home-name-text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 0rem;
+}
+
+.home-name-text-container p {
+  font-size: 1.2rem;
+  margin-top: 0rem;
+}
