@@ -118,7 +118,7 @@ const playLeni = () => {
         GitHub <img src={GitHubIcon} alt="GitHub" className="github-link-icon"/>
         </a>
       </div>
-
+  
   </nav>
 }
 

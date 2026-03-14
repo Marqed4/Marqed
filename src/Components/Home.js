@@ -1,6 +1,6 @@
-import React from 'react'
+import "../Components/Home.js"
 import Navbar from "./Navbar"
-import bannerbackground from "./Resources/art/Background Project/Orange Glob.png"
+import bannerbackground from "../Resources/art/Background Project/Orange Glob.png"
 
 const Home = () => {
   return ( 
@@ -11,7 +11,7 @@ const Home = () => {
         <img src = {bannerbackground} alt = "" />
         </div>
     </div>
-    </div>
+  </div>
   );
 };
 
