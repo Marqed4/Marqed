@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "./Navbar"
+import bannerbackground from "./Resources/art/Background Project/Orange Glob.png"
 
 const Home = () => {
   return ( 
