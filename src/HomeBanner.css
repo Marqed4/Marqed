@@ -1,19 +1,20 @@
 .home-banner-container {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: 65%;
+  height: 50vh;
   z-index: 0;
 }
 
-.home-bannerImage-container {
+.home-banner-container {
   width: 100%;
   height: 100%;
 }
 
-.home-bannerImage-container img {
+.home-banner-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 75%;
+  object-fit: scale-down;
+  object-position: right center;
 }
