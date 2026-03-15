@@ -9,7 +9,7 @@ const Home = () => {
         <img src={bannerbackground} alt="" />
       </div>
       <div className="home-name-text-container">
-        <h1>Hey, I'm Zachery</h1>
+        <h1>Hey, I'm Zachery/Marqed</h1>
         <p>
           Video editor, content creator and developer based out of Brooklyn, New York. <br />
           I make YouTube edits, shorts, mods, apps, websites, and much more! <br />
