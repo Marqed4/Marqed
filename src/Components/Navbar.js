@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import React from 'react'
+import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Resources/art/Profile.jpg"
 import GospelAudio from "../Resources/sound/Gospel.mp3"; // "Yves Tumor - Gospel For A New Century"
 import SpellAudio from "../Resources/sound/Spell.mp3"; // "Snow Strippers - Under Your Spell"
@@ -9,8 +9,6 @@ import HomeIcon from "../Resources/art/Home.png"; //  https://openmoji.org/
 import DetailsIcon from "../Resources/art/Details.png"; //  https://openmoji.org/
 import YoutubeIcon from "../Resources/art/Youtube.png"; //  https://openmoji.org/
 import GitHubIcon from "../Resources/art/GitHub.png"; //  https://openmoji.org/
-import {Box, Drawer, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material"
-import InfoIcon from "@mui/icons-material/Info"
 
 const Navbar = () => {
 
@@ -19,6 +17,12 @@ const Navbar = () => {
   const LeniRef = useRef(null)
   const OnlinePersonaRef = useRef(null)
   const isPlayingRef = useRef(false);
+
+    useEffect(() => {
+    return () => {
+      stopHoverAudio();
+    };
+  }, []);
 
 const playOnlinePersona = () => {
   OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
@@ -119,22 +123,30 @@ const playLeni = () => {
         ""
         onMouseEnter = {playGospel} 
         onMouseLeave = {stopHoverAudio}>
-          Home <img src = {HomeIcon} alt = "Home" className = "home-link-icon"/>
-          </a>
-
-        <a href = 
-        ""
-        onMouseEnter = {playOnlinePersona}
-        onMouseLeave = {stopHoverAudio}>
-          Details <img src = {DetailsIcon} alt = "Details" className = "details-link-icon"/> 
+        Home <img src = {HomeIcon} alt = "Home" className = "home-link-icon"/>
         </a>
 
-        <a href = 
-        "https://www.youtube.com/Marqed" 
-        onMouseEnter = {playSpell} 
-        onMouseLeave = {stopHoverAudio}>
-          YouTube <img src = {YoutubeIcon} alt = "YouTube" className = "youtube-link-icon"/>
+        <Link
+          to = "/details"
+          onMouseEnter = {playOnlinePersona}
+          onMouseLeave = {stopHoverAudio}
+          onClick={stopHoverAudio}>
+          Details <img src = {DetailsIcon} alt = "Details" className = "details-link-icon"/> 
+        </Link>
+
+        <div className="dropdown-container"
+          onMouseEnter = {playSpell} 
+          onMouseLeave = {stopHoverAudio}>
+
+          <a href = "https://www.youtube.com/Marqed">
+            YouTube <img src = {YoutubeIcon} alt = "YouTube" className = "youtube-link-icon"/>
           </a>
+
+          <div className="dropdown-menu">
+            <a href="https://www.youtube.com/Marqed/videos">Edits</a>
+            <a href="https://www.youtube.com/Marqed/shorts">Shorts</a>
+          </div>
+        </div>
 
         <a href = 
         "https://github.com/Marqed4"
