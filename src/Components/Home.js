@@ -1,5 +1,7 @@
 import Navbar from "./Navbar.js"
 import bannerbackground from "../Resources/art/Background Project/Orange Glob.gif"
+import HomeEdits from "./HomeEdits.js"
+
 
 const Home = () => {
   return ( 
@@ -15,6 +17,9 @@ const Home = () => {
           I make YouTube edits, shorts, mods, apps, websites, and much more! <br />
           This is my corner of the internet — have a look around.
         </p>
+      </div>
+      <div className = "EditsPreviewContainer">
+      <HomeEdits/>
       </div>
     </div>
   );
