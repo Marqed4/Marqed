@@ -5,12 +5,13 @@ import DemandsVideoPreviewAudio from "../Resources/art/Background Project/Demand
 const DemandsSection = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [gifKey, setGifKey] = useState(0);
     const demandsRefAudio = useRef(null);
 
     useEffect(() => {
         demandsRefAudio.current = new Audio(DemandsVideoPreviewAudio);
         demandsRefAudio.current.loop = true;
-        demandsRefAudio.current.volume = 0.05;
+        demandsRefAudio.current.volume = 0.00;
     }, []);
 
     const handlePlay = () => {
@@ -18,6 +19,8 @@ const DemandsSection = () => {
         
         setIsLoading(true);
         if (!isPlaying) {
+            setGifKey(prev => prev + 1);
+            demandsRefAudio.current.currentTime = 0;
             demandsRefAudio.current.volume = 0.05;
             demandsRefAudio.current.play().then(() => {
                 setIsPlaying(true);
@@ -30,18 +33,16 @@ const DemandsSection = () => {
             demandsRefAudio.current.volume = 0.00;
             setIsPlaying(false);
             setIsLoading(false);
-        }
-
-        
+        } 
     };
 
     return (
     <>
-        <div className="Demands-gif-and-sound-logic-section">
-            {isPlaying && <img src={DemandsVideoPreview} alt="Demands-preview"/>}
+        <div className = "Demands-gif-and-sound-logic-section">
+            {isPlaying && <img key={gifKey} src={`${DemandsVideoPreview}?v=${gifKey}`} alt="Demands-preview"/>}
         </div>
-        <div className="Demands-play-button-container">
-            <button className="play-button" onClick={handlePlay}>
+        <div className = "Demands-play-button-container">
+            <button className = "play-button" onClick = {handlePlay}>
                 {isPlaying ? "Pause" : "Play"}
             </button>
         </div>
