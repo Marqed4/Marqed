@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.327bbcf3.css",
-    "main.js": "/static/js/main.0df50179.js",
-    "static/media/Secular.webm": "/static/media/Secular.9ff1691b4457f5f40e3a.webm",
+    "main.css": "/static/css/main.cab1313e.css",
+    "main.js": "/static/js/main.cc6bbfca.js",
+    "static/media/Secular.webm": "/static/media/Secular.1b3f9673e94d1421f995.webm",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
-    "static/media/Demands.webm": "/static/media/Demands.2e4fcff89260eb2c71f6.webm",
+    "static/media/Demands.webm": "/static/media/Demands.d838f8ad6b95a6ca1955.webm",
     "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.77a1c28da9473227cc2c.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
@@ -16,11 +16,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.327bbcf3.css.map": "/static/css/main.327bbcf3.css.map",
-    "main.0df50179.js.map": "/static/js/main.0df50179.js.map"
+    "main.cab1313e.css.map": "/static/css/main.cab1313e.css.map",
+    "main.cc6bbfca.js.map": "/static/js/main.cc6bbfca.js.map"
   },
   "entrypoints": [
-    "static/css/main.327bbcf3.css",
-    "static/js/main.0df50179.js"
+    "static/css/main.cab1313e.css",
+    "static/js/main.cc6bbfca.js"
   ]
 }
