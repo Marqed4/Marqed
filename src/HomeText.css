@@ -58,8 +58,5 @@
 @media (max-width: 375px) {
   .home-name-text-container {
     max-width: 100%;
-    top: 10%;
-    left: 5%;
-    right: 5%;
   }
 }
