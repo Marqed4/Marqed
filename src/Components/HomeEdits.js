@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
-import DemandsVideoPreview from "../Resources/art/Background Project/Edits/Demands/Demands.webm"
+import DemandsVideoPreview from "../Resources/art/Background Project/Edits/Demands/Demands.mp4"
 import DemandsThumbnail from "../Resources/art/Background Project/Edits/Demands/Demands.jpg"
-import SecularVideoPreview from "../Resources/art/Background Project/Edits/Secular/Secular.webm"
+import SecularVideoPreview from "../Resources/art/Background Project/Edits/Secular/Secular.mp4"
 import SecularThumbnail from "../Resources/art/Background Project/Edits/Secular/Secular.jpg"
 
 const VideoPlayer = ({ src, label, thumbnail }) => {
