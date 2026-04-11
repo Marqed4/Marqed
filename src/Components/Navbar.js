@@ -1,12 +1,13 @@
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../resources/art/Background Project/Gradients/Orange Glob Marble Head.gif"
-
 import GospelAudio from "../resources/sound/Gospel.mp3";
 import SpellAudio from "../resources/sound/Spell.mp3";
 import LeniAudio from "../resources/sound/Leni.mp3";
 import OnlinePersonaAudio from "../resources/sound/OnlinePersona.mp3"
+
+import MusicToggleOn from "../resources/art/navbar emoji/Music On.gif";
+import MusicToggleOff from "../resources/art/navbar emoji/Music Off.gif"; 
 
 import HomeNavbarActive from "../resources/art/navbar graffiti/Home Navbar Active.gif";
 import HomeNavbarInactive from "../resources/art/navbar graffiti/Home Navbar Inactive.gif";
@@ -30,18 +31,15 @@ import YoutubeIconInactive from "../resources/art/navbar emoji/YouTube Inactive.
 import GithubIconActive from "../resources/art/navbar emoji/GitHub Active.gif";
 import GithubIconInactive from "../resources/art/navbar emoji/GitHub Inactive.gif";
 
-// Renders a label gif with an emoji icon absolutely overlaid on top
 function NavItem({ labelActive, labelInactive, iconActive, iconInactive, labelClass, iconClass, hovered }) {
   return (
     <span style={{ position: "relative", display: "inline-flex", flexShrink: 0, pointerEvents: "none" }}>
-      {/* Label */}
       <img
         src={hovered ? labelActive : labelInactive}
         alt=""
         className={labelClass}
         style={{ display: "block", pointerEvents: "none" }}
       />
-      
       <img
         src={hovered ? iconActive : iconInactive}
         alt=""
@@ -61,11 +59,15 @@ const Navbar = () => {
   const [editsHovered, setEditsHovered] = useState(false);
   const [shortsHovered, setShortsHovered] = useState(false);
 
+  const [musicEnabled, setMusicEnabled] = useState(() => {
+  const stored = localStorage.getItem("musicEnabled");
+  return stored === null ? true : stored === "true";
+});
+
   const SpellRef = useRef(null);
   const GospelRef = useRef(null);
   const LeniRef = useRef(null);
   const OnlinePersonaRef = useRef(null);
-  const isPlayingRef = useRef(false);
 
   const stopHoverAudio = () => {
     [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => {
@@ -74,10 +76,10 @@ const Navbar = () => {
         ref.current.currentTime = 0;
       }
     });
-    isPlayingRef.current = false;
   };
 
   const playGospel = () => {
+    if (!musicEnabled) return;
     stopHoverAudio();
     GospelRef.current = new Audio(GospelAudio);
     GospelRef.current.volume = 0.05;
@@ -85,6 +87,7 @@ const Navbar = () => {
   };
 
   const playOnlinePersona = () => {
+    if (!musicEnabled) return;
     stopHoverAudio();
     OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
     OnlinePersonaRef.current.volume = 0.05;
@@ -92,6 +95,7 @@ const Navbar = () => {
   };
 
   const playSpell = () => {
+    if (!musicEnabled) return;
     stopHoverAudio();
     SpellRef.current = new Audio(SpellAudio);
     SpellRef.current.volume = 0.03;
@@ -99,133 +103,136 @@ const Navbar = () => {
   };
 
   const playLeni = () => {
+    if (!musicEnabled) return;
     stopHoverAudio();
     LeniRef.current = new Audio(LeniAudio);
     LeniRef.current.volume = 0.03;
     LeniRef.current.play().catch((err) => console.log("Audio play failed:", err));
   };
 
+  const toggleMusic = () => {
+    const next = !musicEnabled;
+    setMusicEnabled(next);
+    localStorage.setItem("musicEnabled", String(next));
+    if (!next) stopHoverAudio();
+  };
+
   return (
-    <>
-      <div className="home-icon">
-        <img src={Logo} alt="" />
+    <nav>
+      <div className="Navbar-links-container">
+        <a href="/" className="nav-btn"
+          onMouseEnter={() => { setHomeHovered(true); playGospel(); }}
+          onMouseLeave={() => { setHomeHovered(false); stopHoverAudio(); }}
+        >
+          <NavItem
+            labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
+            iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
+            hovered={homeHovered}
+          />
+        </a>
+
+        <Link to="/details" className="nav-btn"
+          onMouseEnter={() => { setDetailsHovered(true); playOnlinePersona(); }}
+          onMouseLeave={() => { setDetailsHovered(false); stopHoverAudio(); }}
+          onClick={stopHoverAudio}
+        >
+          <NavItem
+            labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
+            iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
+            hovered={detailsHovered}
+          />
+        </Link>
+
+        <div className="dropdown-container"
+          onMouseEnter={() => { setYoutubeHovered(true); playSpell(); }}
+          onMouseLeave={() => { setYoutubeHovered(false); stopHoverAudio(); }}
+        >
+          <a href="https://www.youtube.com/Marqed" className="nav-btn">
+            <NavItem
+              labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
+              iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+              hovered={youtubeHovered}
+            />
+          </a>
+          <div className="dropdown-menu">
+            <a href="https://www.youtube.com/Marqed/videos"
+              onMouseEnter={() => setEditsHovered(true)}
+              onMouseLeave={() => setEditsHovered(false)}
+            >
+              <NavItem
+                labelActive={EditsNavbarActive} labelInactive={EditsNavbarInactive} labelClass="edits-button"
+                iconActive={EditsNavbarActive} iconInactive={EditsNavbarInactive} iconClass="edits-button"
+                hovered={editsHovered}
+              />
+            </a>
+            <a href="https://www.youtube.com/Marqed/shorts"
+              onMouseEnter={() => setShortsHovered(true)}
+              onMouseLeave={() => setShortsHovered(false)}
+            >
+              <NavItem
+                labelActive={ShortsNavbarActive} labelInactive={ShortsNavbarInactive} labelClass="shorts-button"
+                iconActive={ShortsNavbarActive} iconInactive={ShortsNavbarInactive} iconClass="shorts-button"
+                hovered={shortsHovered}
+              />
+            </a>
+          </div>
+        </div>
+
+        <a href="https://github.com/Marqed4" className="nav-btn"
+          onMouseEnter={() => { setGithubHovered(true); playLeni(); }}
+          onMouseLeave={() => { setGithubHovered(false); stopHoverAudio(); }}
+        >
+          <NavItem
+            labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
+            iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
+            hovered={githubHovered}
+          />
+        </a>
       </div>
 
-      <nav>
-        {/* Desktop Menu */}
-        <div className="Navbar-links-container">
+      <div className="music-toggle" onClick={toggleMusic}>
+        <img 
+        src={musicEnabled ? MusicToggleOn : MusicToggleOff}
+        />
+      </div>
 
-          <a href="/" className="nav-btn"
-            onMouseEnter={() => { setHomeHovered(true); playGospel(); }}
-            onMouseLeave={() => { setHomeHovered(false); stopHoverAudio(); }}
-          >
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {menuOpen && (
+        <div className="mobile-menu">
+          <a href="/" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
               labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
               iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
               hovered={homeHovered}
             />
           </a>
-
-          <Link to="/details" className="nav-btn"
-            onMouseEnter={() => { setDetailsHovered(true); playOnlinePersona(); }}
-            onMouseLeave={() => { setDetailsHovered(false); stopHoverAudio(); }}
-            onClick={stopHoverAudio}
-          >
+          <Link to="/details" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
               labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
               iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
               hovered={detailsHovered}
             />
           </Link>
-
-          <div className="dropdown-container"
-            onMouseEnter={() => { setYoutubeHovered(true); playSpell(); }}
-            onMouseLeave={() => { setYoutubeHovered(false); stopHoverAudio(); }}
-          >
-            <a href="https://www.youtube.com/Marqed" className="nav-btn">
-              <NavItem
-                labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
-                iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
-                hovered={youtubeHovered}
-              />
-            </a>
-            <div className="dropdown-menu">
-              <a href="https://www.youtube.com/Marqed/videos"
-                onMouseEnter={() => setEditsHovered(true)}
-                onMouseLeave={() => setEditsHovered(false)}
-              >
-                <NavItem
-                  labelActive={EditsNavbarActive} labelInactive={EditsNavbarInactive} labelClass="edits-button"
-                  iconActive={EditsNavbarActive} iconInactive={EditsNavbarInactive} iconClass="edits-button"
-                  hovered={editsHovered}
-                />
-              </a>
-              <a href="https://www.youtube.com/Marqed/shorts"
-                onMouseEnter={() => setShortsHovered(true)}
-                onMouseLeave={() => setShortsHovered(false)}
-              >
-                <NavItem
-                  labelActive={ShortsNavbarActive} labelInactive={ShortsNavbarInactive} labelClass="shorts-button"
-                  iconActive={ShortsNavbarActive} iconInactive={ShortsNavbarInactive} iconClass="shorts-button"
-                  hovered={shortsHovered}
-                />
-              </a>
-            </div>
-          </div>
-
-          <a href="https://github.com/Marqed4" className="nav-btn"
-            onMouseEnter={() => { setGithubHovered(true); playLeni(); }}
-            onMouseLeave={() => { setGithubHovered(false); stopHoverAudio(); }}
-          >
+          <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
+            <NavItem
+              labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
+              iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+              hovered={youtubeHovered}
+            />
+          </a>
+          <a href="https://github.com/Marqed4" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
               labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
               iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
               hovered={githubHovered}
             />
           </a>
-
         </div>
-
-        {/* Hamburger - mobile only */}
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </div>
-
-        {/* Mobile Dropdown */}
-        {menuOpen && (
-          <div className="mobile-menu">
-            <a href="/" className="nav-btn" onClick={() => setMenuOpen(false)}>
-              <NavItem
-                labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
-                iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
-                hovered={homeHovered}
-              />
-            </a>
-            <Link to="/details" className="nav-btn" onClick={() => setMenuOpen(false)}>
-              <NavItem
-                labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
-                iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
-                hovered={detailsHovered}
-              />
-            </Link>
-            <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
-              <NavItem
-                labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
-                iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
-                hovered={youtubeHovered}
-              />
-            </a>
-            <a href="https://github.com/Marqed4" className="nav-btn" onClick={() => setMenuOpen(false)}>
-              <NavItem
-                labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
-                iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
-                hovered={githubHovered}
-              />
-            </a>
-          </div>
-        )}
-      </nav>
-    </>
+      )}
+    </nav>
   );
 };
 

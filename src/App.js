@@ -2,30 +2,33 @@ import { Routes, Route } from 'react-router-dom';
 import UnfoundPage from "./Components/UnfoundPage.jsx";
 
 // <---- Landing Page ---->
-import './HomeNavbar.css';
-import './HomeBody.css';
-import './HomeBanner.css';
-import './HomeText.css';
-import './YouTubeDropdown.css';
-import './HomeEditsShorts.css';
-import './HomeEdits.css';
-import './HomeShorts.css';
-import './MediaPreviews.css';
+import './Components/Icon.css';
+import './Components/Navbar.css';
+import './Components/HomeBody.css';
+import './Components/HomeBanner.css';
+import './Components/HomeText.css';
+import './Components/YouTubeDropdown.css';
+import './Components/HomeEditsShorts.css';
+import './Components/HomeEdits.css';
+import './Components/HomeShorts.css';
+import './Components/MediaPreviews.css';
+
 import Home from "./Components/Home";
 
 // <---- Details Page ---->
-import './Details.css';
+import './Components/Details.css';
 import Details from "./Components/Details";
 
 // <---- Custom Calendar Proj Page ---->
-import './CustomCalendar.css';
+import './Components/CustomCalendar.css';
 import CustomCalendar from "./Components/CustomCalendar";
 
 // <---- Resume Page ---->
-import './Resume.css';
+import './Components/Resume.css';
 import Resume from "./Components/Resume";
 
-const App = () => {
+const App = () => 
+{
   return (
     <Routes>
       <Route path="/" element={<Home />} />

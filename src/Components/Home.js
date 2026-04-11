@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import bannerbackground from "../resources/art/Background Project/Gradients/Orange Glob Marble.gif"
+import Icon from "./Icon.js";
 import Navbar from "./Navbar.js"
 import MediaPreviews from "./MediaPreviews.js"
 import CustomCalendar from "./CustomCalendar.js"
@@ -14,6 +15,7 @@ const Home = () => {
   return ( 
     <>
       <div className="home-container">
+        <Icon />
         <Navbar/>
         <img src={bannerbackground} alt="" className="home-banner-bg" />
 

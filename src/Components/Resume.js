@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Icon from "./Icon.js";
 import Navbar from "./Navbar.js";
 
 const Resume = () => {
@@ -8,6 +9,7 @@ const Resume = () => {
 
   return (
     <div className="resume-container">
+      <Icon />
       <Navbar />
       <div className="resume-card">
 
