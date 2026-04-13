@@ -42,10 +42,10 @@ const CustomCalendar = () => {
             <img src={Overview} className="overview-header" alt="Overview" />
           </h2>
           <p className="overview-body">
-            CustomCalendar is a desktop application built with Tauri, combining a
-            Java-powered backend with a React frontend. The app runs a local Spark Java
-            REST server inside the JAR, which the Rust/Tauri layer communicates with
-            to serve calendar data to the UI.
+            Calisigh is a feature rich desktop application built with Tauri, combining a React frontend with a Java backend. <br /><br />
+            The app embeds a local Spark Java REST API server inside the JAR, which the Rust/Tauri layer communicates with to deliver calendar data to the UI. <br /><br />
+            Calisigh also includes an integrated handling for an AI engine (Ollamma 3.2) 
+            that adapts to the user's device specifications to run efficiently and cost effectively.
           </p>
         </div>
 
