@@ -22,7 +22,7 @@ const Home = () => {
         <div className="home-content">
           <div className="home-card">
             <p>
-            Hey, I’m Zach — most people online know me as Marqed.<br /><br />
+            Hey, I’m Zach! Most people online know me as Marqed.<br /><br />
             This is my personal website, where I share my work and projects as an aspiring professional developer & video editor.<br /><br />
             
             On this site, you can find a selection of my video edits, as well as some of my coding projects and other creative endeavors.

@@ -98,8 +98,8 @@ const Details = () => {
             The kind of effervescence that turns a great "play" into an iconic moment.
             <br/><br/>
             The thing is, for me editing & programming are an expression of self.
-            It isn't conformity — so what is it? It's application, maybe indentation.
-            The world I'd like to live in — the way I want to be noticed.
+            It isn't conformity... so what is it? It's application, maybe indentation.
+            The world I'd like to live in... the way I want to be noticed.
             It's all much, much more than just utility!
             <br/><br/>
             Technology comes naturally because it's the toolset that lets me shape ideas,
