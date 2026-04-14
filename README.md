@@ -1,1 +1,7 @@
-Welcome to the editorial of a digital athlete.
+🌐 Personal Website  
+
+• Programming  
+• Graphic Design  
+
+• Edits  
+• Shorts
