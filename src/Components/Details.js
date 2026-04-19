@@ -40,7 +40,7 @@ const Details = () => {
               <img src={ResumeDetailsInactive} className="details-resume-img" alt="Resume" />
             </h2>
             <p className="resume-body">
-              <a href="https://www.marqed.it/Resume" target="_blank" rel="noopener noreferrer">
+              <a href="/Resume" target="_blank" rel="noopener noreferrer">
                 <u>View Resume</u>
               </a>
               <br/>

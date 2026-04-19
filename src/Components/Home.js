@@ -4,7 +4,8 @@ import bannerbackground from "../resources/art/Background Project/Gradients/Oran
 import Icon from "./Icon.js";
 import Navbar from "./Navbar.js"
 import MediaPreviews from "./MediaPreviews.js"
-import CustomCalendar from "./CustomCalendar.js"
+import Calsigh from "./Calisigh.js"
+import Projects from "./Projects.js"
 
 const Home = () => {
 
@@ -32,6 +33,13 @@ const Home = () => {
             <p>
             Thanks for stopping by, and I hope you enjoy exploring this site!
             </p>
+          </div>
+          <div className="home-card">
+            <h2>
+              <a href="/Projects" target="_blank" rel="noopener noreferrer">
+                <u>Projects</u>
+              </a>
+            </h2>
           </div>
         </div>
       </div>
