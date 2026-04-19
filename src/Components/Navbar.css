@@ -83,10 +83,15 @@ nav {
   }
 }
 
-.home-button,
 .details-button,
 .youtube-button,
 .github-button {
+  height: 42px;
+  width: auto;
+}
+
+.home-button {
+  transform: translateX(12.5px);
   height: 42px;
   width: auto;
 }
@@ -101,7 +106,7 @@ nav {
   position: absolute;
   width: auto;
   height: 45px;
-  left: 70px;
+  left: 80px;
   top: 40%;
   transform: translateY(-50%);
   margin-left: 10px;

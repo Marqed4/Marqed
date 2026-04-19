@@ -20,12 +20,16 @@ import './Components/Details.css';
 import Details from "./Components/Details";
 
 // <---- Custom Calendar Proj Page ---->
-import './Components/CustomCalendar.css';
-import CustomCalendar from "./Components/CustomCalendar";
+import './Components/Calisigh.css';
+import Calisigh from "./Components/Calisigh.js";
 
 // <---- Resume Page ---->
 import './Components/Resume.css';
 import Resume from "./Components/Resume";
+
+// <---- Projects Page ---->
+import './Components/Projects.css';
+import Projects from "./Components/Projects";
 
 const App = () => 
 {
@@ -34,7 +38,8 @@ const App = () =>
       <Route path="/" element={<Home />} />
       <Route path="/details" element={<Details />} />
       <Route path="/Resume" element={<Resume />} />
-      <Route path="/CustomCalendar" element={<CustomCalendar />} />
+      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Calisigh" element={<Calisigh />} />
       <Route path="*" element={<UnfoundPage />} />
     </Routes>
   );
