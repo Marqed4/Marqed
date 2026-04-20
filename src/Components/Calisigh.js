@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 
-import CalsighLogo from "../resources/art/calisigh page graphics/icon.png"
-import CalsighName from "../resources/art/calisigh page graphics/Calsigh Inactive.gif"
+import CalisighLogo from "../resources/art/calisigh page graphics/icon.png"
+import CalisighName from "../resources/art/calisigh page graphics/Calisigh.gif"
 import Made from "../resources/art/Background Project/Gradients/Made Inactive.gif"
 import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
 import Features from "../resources/art/Background Project/Gradients/Features Inactive.gif"
 import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif"
 import MonthsView from "../resources/art/calisigh page graphics/Months View.png"
 import YearsView from "../resources/art/calisigh page graphics/Years View.png"
+import ChatView from "../resources/art/calisigh page graphics/Chat View.png"
 import SettingsView from "../resources/art/calisigh page graphics/Settings View.png"
 
 const Calsigh = () => {
@@ -20,26 +21,28 @@ const Calsigh = () => {
   return (
     <div className="custom-calendar-container">
       <Navbar/>
-      <h1><img src={CalsighLogo} className="custom-calendar-logo" alt="CalsighLogo"/></h1>
-      <h1><img src={CalsighName} className="custom-calendar-name" alt="CalsighName"/></h1>
+      <h1><img src={CalisighLogo} className="custom-calendar-logo" alt="CalsighLogo"/></h1>
+      <h1><img src={CalisighName} className="custom-calendar-name" alt="CalsighName"/></h1>
+
+      <div className="app-controls-section">
+        <p className="app-controls-docs-label">App Controls</p>
+        <ul className="app-controls-list">
+          <li><span className="mv-tag">a.1</span> Left arrow button ← navigates to the previous months/years</li>
+          <li><span className="mv-tag">a.2</span> Right arrows button → navigates to the next months/years</li>
+          <li><span className="mv-tag">a.3</span> FAQ/About button → link for Calisigh documentation</li>
+          <li><span className="mv-tag">a.4</span> Chat button → initiate integrated Calisigh AI assistant</li>
+          <li><span className="mv-tag">a.4.1</span> Calisigh's AI Assistant has knowledge of your events</li>
+          <li><span className="mv-tag">a.5</span> Settings button → access app settings or user preferences</li>
+          <li><span className="mv-tag">a.6</span> Mini calendar sidebar → compact monthly overview for quick date navigation</li>
+          <li><span className="mv-tag">a.7</span> Remove button ✕ removes user inputs, e.g., events, backgrounds, alarm sounds</li>
+        </ul>
+      </div>
+
       
       {/* Months Viewt */}
       <div className="months-view-section">
         <img src={MonthsView} className="months-view-example" alt="Month View"/>
         <div className="months-view-docs">
-
-          <p className="months-view-docs-label">App Controls</p>
-          <ul className="months-view-list">
-            <li><span className="mv-tag">a.1</span> Left arrow button ← navigates to the previous months/years</li>
-            <li><span className="mv-tag">a.2</span> Right arrows button → navigates to the next months/years</li>
-            <li><span className="mv-tag">a.3</span> FAQ/About button → link for Calisigh documentation</li>
-            <li><span className="mv-tag">a.4</span> Chat button → initiate integrated Calisigh AI assistant</li>
-            <li><span className="mv-tag">a.4.1</span> Calisigh's AI Assistant has knowledge of your events </li>
-            <li><span className="mv-tag">a.5</span> Settings button → access app settings or user preferences</li>
-            <li><span className="mv-tag">a.6</span> Mini calendar sidebar → compact monthly overview for quick date navigation</li>
-            <li><span className="mv-tag">a.7</span>Remove button ✕ removes user inputs, e.g., events, backgrounds, alarm sounds  </li>
-          </ul>
-
           <p className="months-view-docs-label">Months View</p>
           <ul className="months-view-list">
             <li><span className="mv-tag">mv.1</span> Month &amp; Year 🗓️ displayed at the top center of the calendar grid.</li>
@@ -64,6 +67,36 @@ const Calsigh = () => {
             <li><span className="mv-tag">yv.1.1</span> This also acts as a button allowing toggle between months & years views</li>
             <li><span className="mv-tag">yv.2</span> Year cell → contains data about that year<br/>&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;⁃ Year (yv.3)</li>
             <li><span className="mv-tag">yv.2.1</span> Current year is shadded</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Chat View */}
+      <div className="chat-view-section">
+        <img src={ChatView} className="chat-view-example" alt="Chat View"/>
+        <div className="chat-view-docs">
+
+          <p className="chat-view-docs-label">Chat View</p>
+          <ul className="chat-view-list">
+
+            <li><span className="mv-tag">cv.1</span> Assistant message bubble → displays system or AI responses</li>
+            <li><span className="mv-tag">cv.1.1</span> Tone varies depending on selected assistant personality</li>
+
+            <li><span className="mv-tag">cv.2</span> User message bubble → shows what the user typed or said</li>
+
+            <li><span className="mv-tag">cv.3</span> Input bar → where the user types messages</li>
+            <li><span className="mv-tag">cv.3.1</span> Placeholder text → contextual hint (e.g., “pour your heart out, or whatever”)</li>
+
+            <li><span className="mv-tag">cv.4</span> Microphone button → toggles voice input</li>
+
+            <li><span className="mv-tag">cv.5</span> Chat scroll container → holds the conversation history</li>
+            <li><span className="mv-tag">cv.5.1</span> Auto-scrolls to newest message</li>
+
+            <li><span className="mv-tag">cv.6</span> Assistant thinking state → temporary text or animation while generating a reply</li>
+
+            <li><span className="mv-tag">cv.7</span> Event awareness → assistant can reference upcoming events from the calendar</li>
+            <li><span className="mv-tag">cv.7.1</span> Example: “You’ve got the Job Fair on 4/13…”</li>
+
           </ul>
         </div>
       </div>
@@ -94,18 +127,20 @@ const Calsigh = () => {
       </div>
       
       <div className="custom-calendar-content">
-        <div className="custom-calendar-layout-made">
-          <h2 className="made-with-header">
-            <img src={Made} className="made-with" alt="Made" />
-          </h2>
-          <div className="introduction-container">
-            <p className="introduction-body">
-              Build Tools: Maven, Cargo, Node.js/Vite<br/><br/>
-              Frontend: React (Tauri)<br/><br/>
-              Backend: Spark Java (embedded REST server)<br/><br/>
-              Desktop: Tauri (Rust + WebView)<br/><br/>
-              Lang: Java, Rust, JavaScript/TypeScript, HTML/CSS<br/><br/>
-            </p>
+
+        <div className="app-controls-section">
+          <div className="app-controls-docs">
+            <p className="app-controls-docs-label">App Controls</p>
+            <ul className="app-controls-list">
+              <li><span className="mv-tag">a.1</span> Left arrow button ← navigates to the previous months/years</li>
+              <li><span className="mv-tag">a.2</span> Right arrows button → navigates to the next months/years</li>
+              <li><span className="mv-tag">a.3</span> FAQ/About button → link for Calisigh documentation</li>
+              <li><span className="mv-tag">a.4</span> Chat button → initiate integrated Calisigh AI assistant</li>
+              <li><span className="mv-tag">a.4.1</span> Calisigh's AI Assistant has knowledge of your events</li>
+              <li><span className="mv-tag">a.5</span> Settings button → access app settings or user preferences</li>
+              <li><span className="mv-tag">a.6</span> Mini calendar sidebar → compact monthly overview for quick date navigation</li>
+              <li><span className="mv-tag">a.7</span> Remove button ✕ removes user inputs, e.g., events, backgrounds, alarm sounds</li>
+            </ul>
           </div>
         </div>
 
