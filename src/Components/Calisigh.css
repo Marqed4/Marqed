@@ -88,7 +88,8 @@
 
 .months-view-section,
 .years-view-section,
-.settings-view-section {
+.settings-view-section,
+.chat-view-section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -97,9 +98,26 @@
   padding: 20px 40px 40px 40px;
 }
 
+.app-controls-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 20px 40px 40px 40px;
+}
+
+.app-controls-docs {
+  text-align: right;
+  max-width: 520px;
+  width: 100%;
+  padding-top: 6px;
+}
+
 .months-view-example,
 .years-view-example,
-.settings-view-example {
+.settings-view-example,
+.chat-view-example,
+.app-controls-example {
   width: 520px;
   max-width: 55%;
   height: auto;
@@ -110,7 +128,8 @@
 
 .months-view-docs,
 .years-view-docs,
-.settings-view-docs {
+.settings-view-docs,
+.chat-view-docs {
   text-align: left;
   max-width: 380px;
   padding-top: 6px;
@@ -118,7 +137,9 @@
 
 .months-view-docs-label,
 .years-view-docs-label,
-.settings-view-docs-label {
+.settings-view-docs-label,
+.chat-view-docs-label,
+.app-controls-docs-label {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -129,14 +150,18 @@
 }
 
 .months-view-docs-label:first-child, 
-.years-view-docs-label:first-child
-.settings-docs-label:first-child {
+.years-view-docs-label:first-child,
+.settings-view-docs-label:first-child,
+.chat-view-docs-label:first-child,
+.app-controls-docs-label:first-child {
   margin-top: 0;
 }
 
 .months-view-list,
 .years-view-list,
-.settings-view-list {
+.settings-view-list,
+.chat-view-list,
+.app-controls-list {
   list-style: none;
   padding: 0;
   margin: 0 0 8px 0;
@@ -150,7 +175,9 @@
 
 .months-view-list li,
 .years-view-list li,
-.settings-view-list li {
+.settings-view-list li,
+.chat-view-list li,
+.app-controls-list li {
   font-size: 0.82rem;
   font-weight: 225;
   color: rgba(255, 255, 255, 0.75);
@@ -180,7 +207,9 @@
 @media (max-width: 770px) {
   .months-view-section, 
   .years-view-section,
-  .settings-view-section {
+  .settings-view-section,
+  .chat-view-section,
+  .app-controls-section {
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -188,14 +217,17 @@
 
   .months-view-example,
   .years-view-example,
-  .settings-view-example {
+  .settings-view-example,
+  .chat-view-example,
+  .app-controls-example {
     width: 100%;
     max-width: 100%;
   }
 
   .months-view-docs,
   .years-view-docs,
-  .settings-view-docs {
+  .settings-view-docs,
+  .chat-view-docs {
     max-width: 100%;
   }
 }
