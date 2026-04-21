@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd8571b8.css",
-    "main.js": "/static/js/main.628da370.js",
+    "main.css": "/static/css/main.d943bc2e.css",
+    "main.js": "/static/js/main.3c32cdd5.js",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -46,22 +46,26 @@
     "static/media/Architecture Inactive.gif": "/static/media/Architecture Inactive.69b48919b32edc538d51.gif",
     "static/media/Chat View.png": "/static/media/Chat View.0887dad6ef97961c2cc7.png",
     "static/media/Projects Inactive.gif": "/static/media/Projects Inactive.411278085d5f34e37d79.gif",
+    "static/media/Edit Alarm View.png": "/static/media/Edit Alarm View.46190d651fdbd58ee94b.png",
     "static/media/Resume Details Inactive.gif": "/static/media/Resume Details Inactive.1bb417219fea5cade858.gif",
     "static/media/Calisigh.gif": "/static/media/Calisigh.a6876f2c1eab27766097.gif",
     "static/media/Education Details Inactive.gif": "/static/media/Education Details Inactive.c00e95698a423ca1dbaf.gif",
+    "static/media/Add Alarm View.png": "/static/media/Add Alarm View.f8809ddadfa14faf7650.png",
     "static/media/Interests Details Inactive.gif": "/static/media/Interests Details Inactive.c06a80267e8211287a06.gif",
     "static/media/Overview Inactive.gif": "/static/media/Overview Inactive.c75b2b64b3120c3c02a9.gif",
+    "static/media/Duplicate Date Selection.png": "/static/media/Duplicate Date Selection.14e742e5ef68ac8fdfaa.png",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
     "static/media/icon.png": "/static/media/icon.fa92551046846438d18d.png",
     "static/media/Made Inactive.gif": "/static/media/Made Inactive.da9e19063538fdb3d0d4.gif",
+    "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.fd8571b8.css.map": "/static/css/main.fd8571b8.css.map",
-    "main.628da370.js.map": "/static/js/main.628da370.js.map"
+    "main.d943bc2e.css.map": "/static/css/main.d943bc2e.css.map",
+    "main.3c32cdd5.js.map": "/static/js/main.3c32cdd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd8571b8.css",
-    "static/js/main.628da370.js"
+    "static/css/main.d943bc2e.css",
+    "static/js/main.3c32cdd5.js"
   ]
 }
