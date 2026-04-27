@@ -12,9 +12,15 @@ const ProjectsArray = [
     logo: CalisighLogo,
     title: "Calisigh",
     description:
-      "Calisigh is a calendar app that doesn't gaslight you. " +
-      "open it, add your events, move on. " +
-      "Melodrama included free of charge.",
+  "A feature‑rich Midwestern-emo calendar\n" +
+  "Open it, add your events, choose your themes, and self-loath...",
+  },
+  {
+    id: 1,
+    logo: CalisighLogo,
+    title: "Popular Vote",
+    description:
+  "Private query session w/ AI forked clustering/ condensing\n",
   },
 ];
 // Each title will be sub folder

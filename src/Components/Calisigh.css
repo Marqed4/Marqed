@@ -253,3 +253,18 @@
   background: black;
   margin: 12px 0;
 }
+
+.png-columer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 520px;
+}
+
+.png-columer .months-view-example {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

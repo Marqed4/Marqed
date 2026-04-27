@@ -11,6 +11,10 @@ import MonthsView from "../resources/art/calisigh page graphics/Months View.png"
 import YearsView from "../resources/art/calisigh page graphics/Years View.png"
 import ChatView from "../resources/art/calisigh page graphics/Chat View.png"
 import SettingsView from "../resources/art/calisigh page graphics/Settings View.png"
+import AddAlarmView from "../resources/art/calisigh page graphics/Add Alarm View.png"
+import EditAlarmView from "../resources/art/calisigh page graphics/Edit Alarm View.png"
+import EditDuplicateAlarmView from "../resources/art/calisigh page graphics/Duplicate Date Selection.png"
+import EventView from "../resources/art/calisigh page graphics/Event View.png"
 
 const Calsigh = () => {
 
@@ -56,6 +60,51 @@ const Calsigh = () => {
         </div>
       </div>
 
+      {/* Add Alarm View */}
+      <div className="months-view-section">
+        <img src={AddAlarmView} className="months-view-example" alt="Add Alarm View"/>
+        <div className="months-view-docs">
+          <p className="months-view-docs-label">Add Alarm View</p>
+          <ul className="months-view-list">
+            <li><span className="mv-tag">av.1</span> Date label → displays the selected date the alarm is being added to</li>
+            <li><span className="mv-tag">av.2</span> Title field → text input for the alarm's title</li>
+            <li><span className="mv-tag">av.3</span> Description field → multiline text input for an optional alarm description</li>
+            <li><span className="mv-tag">av.4</span> Time field → time input for scheduling the alarm</li>
+            <li><span className="mv-tag">av.5</span> Clock icon → native time picker display for the time field </li>
+            <li><span className="mv-tag">av.5.1</span> Time dropdown (hours, minutes, meridiems) </li>
+            <li><span className="mv-tag">av.6</span> Save button → validates and saves the alarm, closes the view</li>
+            <li><span className="mv-tag">av.7</span> Cancel button → discards changes and closes the view</li>
+          </ul>
+        </div>
+      </div>
+      
+      {/* Edit Alarm View */}
+      <div className="months-view-section">
+        <div className="png-columer">
+        <img src={EditAlarmView} className="months-view-example" alt="Edit Alarm View"/>
+        <img src={EditDuplicateAlarmView} className="months-view-example" alt="Edit Alarm View"/>
+        </div>
+        <div className="months-view-docs">
+          <p className="months-view-docs-label">Edit Alarm View</p>
+          <ul className="months-view-list">
+            <li><span className="mv-tag">ev.1</span> Date label → displays the selected date of the alarm being edited</li>
+            <li><span className="mv-tag">ev.2</span> Title field → text input pre-filled with the alarm's current title</li>
+            <li><span className="mv-tag">ev.3</span> Description field → multiline text input pre-filled with the alarm's current description</li>
+            <li><span className="mv-tag">ev.4</span> Time field → time input pre-filled with the alarm's current scheduled time</li>
+            <li><span className="mv-tag">ev.4.1</span> Clock icon → native time picker display for the time field (e.g., Add Alarm View)</li>
+            <li><span className="mv-tag">ev.5</span> Repeat Until section → group containing repeat frequency options and end date</li>
+            <li><span className="mv-tag">ev.6</span> Frequency toggle buttons → select repeat interval (e.g., Weekly, Yearly)</li>
+            <li><span className="mv-tag">ev.7</span> End date field → date input for when the repeat should stop, with calendar icon for native date picker</li>
+            <li><span className="mv-tag">ev.8</span> Confirm button → confirms the repeat settings and collapses the repeat section</li>
+            <li><span className="mv-tag">ev.9</span> Cancel (repeat) button → discards repeat changes and collapses the repeat section</li>
+            <li><span className="mv-tag">ev.10</span> Save button → validates and saves all edits to the alarm, closes the view</li>
+            <li><span className="mv-tag">ev.11</span> Duplicate button → toggles the Repeat Until view</li>
+            <li><span className="mv-tag">ev.12</span> Delete button → permanently removes the alarm for that day &amp; closes the view</li>
+            <li><span className="mv-tag">ev.13</span> Cancel button → discards all changes &amp; closes the view</li>
+          </ul>
+        </div>
+      </div>
+
       {/* Years View */}
       <div className="years-view-section">
         <img src={YearsView} className="years-view-example" alt="Years View"/>
@@ -79,80 +128,51 @@ const Calsigh = () => {
           <p className="chat-view-docs-label">Chat View</p>
           <ul className="chat-view-list">
 
-            <li><span className="mv-tag">cv.1</span> Assistant message bubble → displays system or AI responses</li>
-            <li><span className="mv-tag">cv.1.1</span> Tone varies depending on selected assistant personality</li>
-
-            <li><span className="mv-tag">cv.2</span> User message bubble → shows what the user typed or said</li>
-
-            <li><span className="mv-tag">cv.3</span> Input bar → where the user types messages</li>
-            <li><span className="mv-tag">cv.3.1</span> Placeholder text → contextual hint (e.g., “pour your heart out, or whatever”)</li>
-
-            <li><span className="mv-tag">cv.4</span> Microphone button → toggles voice input</li>
-
-            <li><span className="mv-tag">cv.5</span> Chat scroll container → holds the conversation history</li>
-            <li><span className="mv-tag">cv.5.1</span> Auto-scrolls to newest message</li>
-
-            <li><span className="mv-tag">cv.6</span> Assistant thinking state → temporary text or animation while generating a reply</li>
-
-            <li><span className="mv-tag">cv.7</span> Event awareness → assistant can reference upcoming events from the calendar</li>
-            <li><span className="mv-tag">cv.7.1</span> Example: “You’ve got the Job Fair on 4/13…”</li>
+            <li><span className="mv-tag">c.1</span> Assistant message bubble → displays system or AI responses</li>
+            <li><span className="mv-tag">c.2</span> Send button → sends message to chatbot</li>
+            <li><span className="mv-tag">c.3</span> Calisigh Helper's message → inititate/response</li>
+            <li><span className="mv-tag">c.4</span> User's message → reply/response</li>
 
           </ul>
         </div>
       </div>
 
-      {/* Settings View */}
-      <div className="settings-view-section">
-        <img src={SettingsView} className="settings-view-example" alt="Settings View"/>
-        <div className="settings-view-docs">
-
-          <p className="settings-view-docs-label">Settings View</p>
-          <ul className="settings-view-list">
-            <li><span className="mv-tag">s.1</span> Background selector → where default/custom uploaded backgrounds live</li>
-            <li><span className="mv-tag"></span> Acceptable Formats: JPG, PNG, GIF &amp; WEBP</li>
-            <li><span className="mv-tag">s.2</span> Upload button → upload a custom background image from your device</li>
-            <li><span className="mv-tag">s.3</span> Save button → saves the current background &amp; alert sound selection</li>
-            <li><span className="mv-tag">s.4</span> Cancel button → discards changes, stops alert sound playback, and closes the settings view</li>
-            <li><span className="mv-tag">s.5</span> Selected background → currently active background is highlighted with a border</li>
-            <li><span className="mv-tag">s.6</span> Background card → displays a preview thumbnail and label of the background</li>
-            <div className="divider" />
-            <li><span className="mv-tag">s.7</span> Alert Sound panel → select an alert sound for calendar event notifications</li>
-            <li><span className="mv-tag">s.8</span> Default Chime → the built-in default notification sound</li>
-            <li><span className="mv-tag">s.9</span> Upload button → upload a custom audio file as an alert sound</li>
-            <li><span className="mv-tag"></span> Acceptable Formats: MP1, MP2, MP3, WAV, AIFF &amp; AU</li>
-            <li><span className="mv-tag">s.10</span> Alert sound card → displays a truncated alert sound title</li>
-            <li><span className="mv-tag">s.11</span> Selected Alert → currently active alert sound is highlighted with a border</li>
+      {/* Event View */}
+      <div className="months-view-section">
+        <img src={EventView} className="months-view-example" alt="Event View"/>
+        <div className="months-view-docs">
+          <p className="months-view-docs-label">Event View</p>
+          <ul className="months-view-list">
+            <li><span className="mv-tag">e.1</span> Event title → displays the alarm's title in large text</li>
+            <li><span className="mv-tag">e.2</span> Event description → displays the alarm's description below the title</li>
+            <li><span className="mv-tag">e.3</span> Stop Alarm button → stops the active alarm and closes the event view</li>
           </ul>
         </div>
       </div>
+
+      
       
       <div className="custom-calendar-content">
-
-        <div className="app-controls-section">
-          <div className="app-controls-docs">
-            <p className="app-controls-docs-label">App Controls</p>
-            <ul className="app-controls-list">
-              <li><span className="mv-tag">a.1</span> Left arrow button ← navigates to the previous months/years</li>
-              <li><span className="mv-tag">a.2</span> Right arrows button → navigates to the next months/years</li>
-              <li><span className="mv-tag">a.3</span> FAQ/About button → link for Calisigh documentation</li>
-              <li><span className="mv-tag">a.4</span> Chat button → initiate integrated Calisigh AI assistant</li>
-              <li><span className="mv-tag">a.4.1</span> Calisigh's AI Assistant has knowledge of your events</li>
-              <li><span className="mv-tag">a.5</span> Settings button → access app settings or user preferences</li>
-              <li><span className="mv-tag">a.6</span> Mini calendar sidebar → compact monthly overview for quick date navigation</li>
-              <li><span className="mv-tag">a.7</span> Remove button ✕ removes user inputs, e.g., events, backgrounds, alarm sounds</li>
-            </ul>
-          </div>
-        </div>
 
         <div className="custom-calendar-layout-overview">
           <h2 className="custom-calendar-overview-header">
             <img src={Overview} className="overview-header" alt="Overview" />
           </h2>
+
           <p className="overview-body">
-            Calsigh is a feature rich desktop application built with Tauri, combining a React frontend with a Java backend. <br /><br />
-            The app embeds a local Spark Java REST API server inside the JAR, which the Rust/Tauri layer communicates with to deliver calendar data to the UI. <br /><br />
-            Calsigh also includes an integrated handling for an AI engine (Ollamma 3.2) 
-            that adapts to the user's device specifications to run efficiently and cost effectively.
+            <strong>Calsigh</strong> is a feature‑rich desktop application built with <strong>Tauri</strong>, 
+            combining a <strong>React</strong> frontend with a 
+            <strong>Maven</strong>-packaged <strong>Java</strong> backend.<br/><br/>
+
+            The backend is distributed as a JAR that embeds a local <strong>Spark Java REST API</strong>. 
+            The Rust/Tauri layer communicates with that local server to deliver calendar data to the UI.<br/><br/>
+
+            Calsigh also includes an on‑device AI engine, <strong>Ollama 3.2</strong>, 
+            which adapts to the user’s hardware to run efficiently and cost‑effectively.<br/><br/>
+
+            The application is fully packaged with 
+            <strong>Tauri</strong> and bundled with a <strong>Temurin 21 JDE
+            </strong> to run the backend on the users PC.
           </p>
         </div>
 
@@ -161,11 +181,11 @@ const Calsigh = () => {
             <img src={Features} className="features-header" alt="Features" />
           </h2>
           <p className="features-body">
-            • Custom calendar views and event management<br/>
-            • Embedded REST API via Spark Java<br/>
-            • Native desktop experience via Tauri + WebView<br/>
-            • React-based UI with Vite for fast builds<br/>
-            • Packaged as a standalone JAR (customcalendar.jar)<br/>
+            • Switch between <strong>Months</strong> and <strong>Years</strong> views with a single tap on the header<br/><br/>
+            • Add, view, duplicate, and remove <strong>events</strong> with titles, times, and multi-event scrolling per day cell<br/><br/>
+            • Built-in <strong>AI assistant</strong> with awareness of events recorded on your calendar<br/><br/>
+            • Personalize your experience with custom <strong>backgrounds</strong> (JPG, PNG, GIF, WEBP) and <strong>alert sounds</strong> (MP3, WAV, and more)<br/><br/>
+            • Compact <strong>mini calendar sidebar</strong> for quick date navigation at a glance
           </p>
         </div>
 
@@ -175,11 +195,11 @@ const Calsigh = () => {
           </h2>
           <p className="architecture-body">
             React (UI)<br/>
-            ↓<br/>
+            ↓<br/><br/>
             Tauri (Rust + WebView)<br/>
-            ↓<br/>
+            ↓<br/><br/>
             Spark Java REST Server<br/>
-            ↓<br/>
+            ↓<br/><br/>
             Calendar Logic (Java/JDK)
           </p>
         </div>
