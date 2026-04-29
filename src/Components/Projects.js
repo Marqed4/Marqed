@@ -5,6 +5,7 @@ import "./Projects.css";
 import ProjectsHeader from "../resources/art/projects page graphics/Projects Inactive.gif"
 
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
+import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
 
 const ProjectsArray = [
   {
@@ -17,10 +18,10 @@ const ProjectsArray = [
   },
   {
     id: 1,
-    logo: CalisighLogo,
-    title: "Popular Vote",
+    logo: PopularVoteLogo,
+    title: "PopularVote",
     description:
-  "Private query session w/ AI forked clustering/ condensing\n",
+  "Private query session w/ AI forked clustering/condensing\n",
   },
 ];
 // Each title will be sub folder

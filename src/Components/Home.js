@@ -36,7 +36,7 @@ const Home = () => {
           </div>
           <div className="home-card">
             <h2>
-              <a href="/Projects" target="_blank" rel="noopener noreferrer">
+              <a href="/Projects">
                 <u>Projects</u>
               </a>
             </h2>

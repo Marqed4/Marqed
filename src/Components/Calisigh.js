@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 
-import CalisighLogo from "../resources/art/calisigh page graphics/icon.png"
+// import CalisighLogo from "../resources/art/calisigh page graphics/icon.png"
 import CalisighName from "../resources/art/calisigh page graphics/Calisigh.gif"
 import Made from "../resources/art/Background Project/Gradients/Made Inactive.gif"
 import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
@@ -19,13 +19,13 @@ import EventView from "../resources/art/calisigh page graphics/Event View.png"
 const Calsigh = () => {
 
   useEffect(() => {
-    document.title = "Marqed's Custom Calendar";
+    document.title = "Calisigh";
   }, []);
 
   return (
     <div className="custom-calendar-container">
       <Navbar/>
-      <h1><img src={CalisighLogo} className="custom-calendar-logo" alt="CalsighLogo"/></h1>
+      {/* <h1><img src={CalisighLogo} className="custom-calendar-logo" alt="CalsighLogo"/></h1> */}
       <h1><img src={CalisighName} className="custom-calendar-name" alt="CalsighName"/></h1>
 
       <div className="app-controls-section">

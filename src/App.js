@@ -23,6 +23,10 @@ import Details from "./Components/Details";
 import './Components/Calisigh.css';
 import Calisigh from "./Components/Calisigh.js";
 
+// <---- PopularVote Proj Page ---->
+import './Components/PopularVote.css';
+import PopularVote from "./Components/PopularVote.js";
+
 // <---- Resume Page ---->
 import './Components/Resume.css';
 import Resume from "./Components/Resume";
@@ -40,6 +44,7 @@ const App = () =>
       <Route path="/Resume" element={<Resume />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Calisigh" element={<Calisigh />} />
+      <Route path="/PopularVote" element={<PopularVote />} />
       <Route path="*" element={<UnfoundPage />} />
     </Routes>
   );
