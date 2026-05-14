@@ -1,1 +1,9 @@
-Welcome to the editorial of a digital athlete.
+🌐 Personal Website
+
+<a href="https://marqed.it/">Live Website</a>
+
+• Programming  
+• Graphic Design  
+
+• Edits  
+• Shorts

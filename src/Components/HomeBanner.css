@@ -1,0 +1,30 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-banner-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 70vh;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .home-banner-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .home-banner-container {
+    width: 80%;
+  }
+}

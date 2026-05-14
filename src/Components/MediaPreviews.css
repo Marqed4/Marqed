@@ -1,0 +1,60 @@
+.HomePageMediaPreviews {
+    display: flex;
+    margin-top: -450px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 700px;
+    gap: 10px;
+    z-index: 100;
+}
+
+.dropdown-toggle-content {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dropdown-toggle-content img {
+    width: 250px;
+    height: auto;
+}
+
+.ContentDropdownRow {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.ContentDropdown {
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease;
+}
+
+.ContentDropdown.open {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.dropdown-down-arrow-one {
+    width: 45px;
+    height: auto;
+    margin-top: -65px;
+    margin-bottom: 5px;
+    padding-left: 100px;
+}
+ 
+.dropdown-down-arrow-two {
+    width: 45px;
+    height: auto;
+    margin-top: -45px;
+    margin-bottom: -20px;
+    padding-left: 100px;
+}
