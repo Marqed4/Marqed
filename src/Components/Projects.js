@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js";
+import Footer from "./Footer.jsx"
 import "./Projects.css";
 
-import ProjectsHeader from "../resources/art/projects page graphics/Projects Inactive.gif"
+import ProjectsInactive from "../resources/art/projects page graphics/Projects Inactive.gif"
+import ProjectsActive from "../resources/art/projects page graphics/Projects Active.gif"
 
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
 import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
@@ -17,11 +19,18 @@ const ProjectsArray = [
   "Open it, add your events, choose your themes, and self-loath...",
   },
   {
-    id: 1,
+    id: 2,
     logo: PopularVoteLogo,
     title: "PopularVote",
     description:
   "Private query session w/ AI forked clustering/condensing\n",
+  },
+  {
+    id: 3,
+    logo: PopularVoteLogo,
+    title: "Time Rabbit",
+    description:
+  "A simple stopwatch app\n",
   },
 ];
 // Each title will be sub folder
@@ -30,9 +39,11 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-
       <div className="projects-page">
-        <img src={ProjectsHeader} className="projects-header" alt="Projects" />
+        <img src={ProjectsInactive}
+        className="projects-header"
+        alt="Projects"
+        />
         <div className="projects-grid">
             {ProjectsArray.map((project) => (
             <a
@@ -51,8 +62,10 @@ const Projects = () => {
             ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
 
 export default Projects;
+export { ProjectsInactive, ProjectsActive };

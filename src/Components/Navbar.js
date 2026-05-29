@@ -125,8 +125,12 @@ const Navbar = () => {
           onMouseLeave={() => { setHomeHovered(false); stopHoverAudio(); }}
         >
           <NavItem
-            labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
-            iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
+            labelActive={HomeNavbarActive}
+            labelInactive={HomeNavbarInactive}
+            labelClass="home-button"
+            iconActive={HomeIconActive}
+            iconInactive={HomeIconInactive}
+            iconClass="home-link-icon"
             hovered={homeHovered}
           />
         </a>
@@ -137,8 +141,12 @@ const Navbar = () => {
           onClick={stopHoverAudio}
         >
           <NavItem
-            labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
-            iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
+            labelActive={DetailsNavbarActive}
+            labelInactive={DetailsNavbarInactive}
+            labelClass="details-button"
+            iconActive={DetailsIconActive}
+            iconInactive={DetailsIconInactive}
+            iconClass="details-link-icon"
             hovered={detailsHovered}
           />
         </Link>
@@ -149,8 +157,12 @@ const Navbar = () => {
         >
           <a href="https://www.youtube.com/Marqed" className="nav-btn">
             <NavItem
-              labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
-              iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+              labelActive={YoutubeNavbarActive}
+              labelInactive={YoutubeNavbarInactive}
+              labelClass="youtube-button"
+              iconActive={YoutubeIconActive}
+              iconInactive={YoutubeIconInactive}
+              iconClass="youtube-link-icon"
               hovered={youtubeHovered}
             />
           </a>
@@ -160,8 +172,12 @@ const Navbar = () => {
               onMouseLeave={() => setEditsHovered(false)}
             >
               <NavItem
-                labelActive={EditsNavbarActive} labelInactive={EditsNavbarInactive} labelClass="edits-button"
-                iconActive={EditsNavbarActive} iconInactive={EditsNavbarInactive} iconClass="edits-button"
+                labelActive={EditsNavbarActive}
+                labelInactive={EditsNavbarInactive}
+                labelClass="edits-button"
+                iconActive={EditsNavbarActive}
+                iconInactive={EditsNavbarInactive}
+                iconClass="edits-button"
                 hovered={editsHovered}
               />
             </a>
@@ -170,8 +186,12 @@ const Navbar = () => {
               onMouseLeave={() => setShortsHovered(false)}
             >
               <NavItem
-                labelActive={ShortsNavbarActive} labelInactive={ShortsNavbarInactive} labelClass="shorts-button"
-                iconActive={ShortsNavbarActive} iconInactive={ShortsNavbarInactive} iconClass="shorts-button"
+                labelActive={ShortsNavbarActive}
+                labelInactive={ShortsNavbarInactive}
+                labelClass="shorts-button"
+                iconActive={ShortsNavbarActive}
+                iconInactive={ShortsNavbarInactive}
+                iconClass="shorts-button"
                 hovered={shortsHovered}
               />
             </a>
@@ -183,8 +203,12 @@ const Navbar = () => {
           onMouseLeave={() => { setGithubHovered(false); stopHoverAudio(); }}
         >
           <NavItem
-            labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
-            iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
+            labelActive={GithubNavbarActive}
+            labelInactive={GithubNavbarInactive}
+            labelClass="github-button"
+            iconActive={GithubIconActive}
+            iconInactive={GithubIconInactive}
+            iconClass="github-link-icon"
             hovered={githubHovered}
           />
         </a>
@@ -204,29 +228,45 @@ const Navbar = () => {
         <div className="mobile-menu">
           <a href="/" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
-              labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
-              iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
+              labelActive={HomeNavbarActive}
+              labelInactive={HomeNavbarInactive}
+              labelClass="home-button"
+              iconActive={HomeIconActive}
+              iconInactive={HomeIconInactive}
+              iconClass="home-link-icon"
               hovered={homeHovered}
             />
           </a>
           <Link to="/details" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
-              labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
-              iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
+              labelActive={DetailsNavbarActive}
+              labelInactive={DetailsNavbarInactive}
+              labelClass="details-button"
+              iconActive={DetailsIconActive}
+              iconInactive={DetailsIconInactive}
+              iconClass="details-link-icon"
               hovered={detailsHovered}
             />
           </Link>
           <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
-              labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
-              iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+              labelActive={YoutubeNavbarActive}
+              labelInactive={YoutubeNavbarInactive}
+              labelClass="youtube-button"
+              iconActive={YoutubeIconActive}
+              iconInactive={YoutubeIconInactive}
+              iconClass="youtube-link-icon"
               hovered={youtubeHovered}
             />
           </a>
           <a href="https://github.com/Marqed4" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
-              labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
-              iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
+              labelActive={GithubNavbarActive}
+              labelInactive={GithubNavbarInactive}
+              labelClass="github-button"
+              iconActive={GithubIconActive}
+              iconInactive={GithubIconInactive}
+              iconClass="github-link-icon"
               hovered={githubHovered}
             />
           </a>

@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+}
+
+.footer-gif {
+  width: 200px;
+  height: auto;
+  display: block;
+}

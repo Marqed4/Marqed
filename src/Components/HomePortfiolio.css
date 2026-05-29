@@ -1,0 +1,39 @@
+.portfolio-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.portfolio-container-projects,
+.portfolio-container-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-container-projects span,
+.portfolio-container-gallery span {
+  width: 225px;
+  overflow: hidden;
+}
+
+.projects-button,
+.gallery-button {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.projects-button {
+  margin-right: -100px;
+  z-index: 2;
+}
+
+.gallery-button {
+  margin-right: -100px;
+  z-index: 1;
+}
+
+.home-card.portfolio-buttons{
+  width: 100px;
+}

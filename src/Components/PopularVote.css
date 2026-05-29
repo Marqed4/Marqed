@@ -29,6 +29,11 @@
   padding: 20px 40px 40px 40px;
 }
 
+/* Flip: docs on left, gif on right */
+.popular-vote-view-section--flip {
+  flex-direction: row-reverse;
+}
+
 .popular-vote-screenshot {
   width: 520px;
   max-width: 55%;
@@ -36,6 +41,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .popular-vote-view-docs {
@@ -117,7 +123,6 @@
   object-fit: contain;
 }
 
-/* Intro cards */
 .popular-vote-layout-overview,
 .popular-vote-layout-features,
 .popular-vote-layout-architecture {
@@ -131,17 +136,9 @@
   backdrop-filter: blur(4px);
 }
 
-.popular-vote-layout-overview {
-  max-width: 300px;
-}
-
-.popular-vote-layout-features {
-  max-width: 220px;
-}
-
-.popular-vote-layout-architecture {
-  max-width: 255px;
-}
+.popular-vote-layout-overview    { max-width: 300px; }
+.popular-vote-layout-features    { max-width: 220px; }
+.popular-vote-layout-architecture{ max-width: 255px; }
 
 .overview-header,
 .features-header,
@@ -160,16 +157,7 @@
   -webkit-text-stroke: 1px black;
 }
 
-.popular-vote-intro-cards {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px 40px;
-}
-
+.popular-vote-intro-cards,
 .popular-vote-content {
   display: flex;
   flex-direction: row;
@@ -196,7 +184,8 @@
 }
 
 @media (max-width: 770px) {
-  .popular-vote-view-section {
+  .popular-vote-view-section,
+  .popular-vote-view-section--flip {
     flex-direction: column;
     align-items: center;
     padding: 20px;

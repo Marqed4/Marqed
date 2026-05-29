@@ -1,25 +1,6 @@
 @font-face {
   font-family: "Latin";
-  src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
-}
-
-.nav-logo-contianer img {
-  width: 75px;
-  height: 70px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px #f0a500;
-  border-radius: 10px;
-}
-
-.Navbar-links-container a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  margin: 8.5px 10px;
-  font-family: Latin;
+  src: url("./resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 
 .Navbar-links-container a:hover {
@@ -27,32 +8,30 @@
 }
 
 body {
-  background-color: bisque;
-}
-
-.details-link-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 6px;
-}
-
-.youtube-link-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 6px;
-}
-
-.github-link-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 6px;
+  background-color: transparent;
 }
 
 .home-banner-container {
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
+}
+
+.home-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.home-bg {
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
