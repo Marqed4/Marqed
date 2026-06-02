@@ -46,7 +46,7 @@ const Details = () => {
                   <u>View Resume</u>
                 </a>
                 <br/>
-                <a href="/documents/Zache Franci ATS Rep Resume.pdf" download>
+                <a href="../documents/Zachery_Francis-June_2026.pdf" download>
                   <u>Download Resume</u>
                 </a>
               </p>

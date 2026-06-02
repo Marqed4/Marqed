@@ -21,10 +21,9 @@ const Resume = () => {
         <section className="resume-section">
           <h2 className="resume-section-title">Profile</h2>
           <p className="resume-profile">
-            Student at Brooklyn College (Minor: Computer Science) currently building a full desktop app in Java,
-            React, and Tauri with an integrated local LLM. Comfortable across the stack from systems programming
-            to React, with hands-on experience in IT support and teaching. Looking for a position where I can
-            contribute and keep learning about tech.
+            Information Systems & Business Management student at Brooklyn College (Minor: Computer Science) 
+            shipping desktop applications in Java, React, and Tauri with an integrated local LLM. 
+            Targeting SWE and IT/sysadmin roles where I can build and keep growing.
           </p>
         </section>
 
@@ -33,13 +32,14 @@ const Resume = () => {
 
           <div className="resume-edu-item">
             <p className="resume-edu-degree">
-              Bachelor of Science, Information Systems <span className="resume-edu-minor">· Minor: Computer Science</span>
+              Bachelor of Science, Information Systems & Business Management
+              <span className="resume-edu-minor"> · Minor: Computer Science</span>
             </p>
             <p className="resume-edu-school">Brooklyn College - Expected: December 2026</p>
           </div>
 
           <div className="resume-edu-item">
-            <p className="resume-edu-degree">Associate of Liberal Arts</p>
+            <p className="resume-edu-degree">Associate of Arts, Liberal Arts</p>
             <p className="resume-edu-school">Kingsborough Community College - August 2021 - May 2023</p>
           </div>
         </section>
@@ -140,34 +140,40 @@ const Resume = () => {
 
           <div className="resume-project">
             <p className="resume-project-title">
-              Calisigh Desktop Calendar App | marqed.it/Calisigh | GitHub In Progress
+              Calisigh Desktop Calendar App | <a href="https://marqed.it/Calisigh"><u>Documentation</u></a> | <a href="https://GitHub.com/Marqed4/Calisigh"><u>GitHub</u></a>
             </p>
             <ul className="resume-project-list">
               <li>
-                Built a fully customizable desktop calendar with React Tauri and Rust, featuring user-defined
-                backgrounds and alert sounds; ships as a packaged Windows installer (v1.1.5) with Temurin 21 JDE
-                available on GitHub.
+                Customizable desktop calendar built with React, Tauri, and Rust; 
+                supports user-uploaded alarm sounds with volume control, background themes, 
+                font selection, event duplication by month/year, and a toggleable library of federal, 
+                cultural, and religious holidays; ships as a packaged Windows installer (v1.1.5) 
+                with Temurin 21 JDE on GitHub.
               </li>
-              <li>Implemented multithreaded system alerts for reliable background notifications.</li>
               <li>
-                Integrated a local LLM handler via Ollama for on-device AI assistance with no external data
-                transmission.
+                Delivered a multithreaded alarm system with popup and Windows system notifications; 
+                integrated a local LLM via Ollama as a context-aware AI agent with knowledge of 
+                past and future user event.
               </li>
             </ul>
           </div>
 
           <div className="resume-project">
-            <p className="resume-project-title">Popular Vote Full-Stack Web App | GitHub In Progress</p>
+            <p className="resume-project-title">Popular Vote Full-Stack Web App | <a href="https://popularvote.marqed.it"><u>Live Site</u></a> | <a href="https://marqed.it/PopularVote"><u>Documentation</u></a> | <a href="https://GitHub.com/Marqed4/PopularVote"><u>GitHub</u></a></p>
             <ul className="resume-project-list">
               <li>
-                Live session platform where hosts share a room via link, QR code, or join code for real-time
-                participant Q and A.
+                Live session platform where hosts share a room via link, QR code, 
+                or join code for real-time participant Q&A; built with React, Node.js, 
+                and Supabase; secured with Google OAuth and end-to-end encrypted sessions.
               </li>
               <li>
-                AI clusters and organizes participant questions so hosts can address themes rather than repeat
-                similar answers.
+                Integrated AI clustering to organize participant questions by theme, 
+                reducing redundant answers and improving host efficiency during live sessions.
               </li>
-              <li>Built with React, Node.js, and Supabase for real-time data sync.</li>
+              <li>
+                Integrated AI clustering to organize participant questions by theme, 
+                reducing redundant answers and improving host efficiency during live sessions.
+              </li>
             </ul>
           </div>
 
@@ -175,8 +181,8 @@ const Resume = () => {
             <p className="resume-project-title">TimeRabbit Java / Swing | GitHub</p>
             <ul className="resume-project-list">
               <li>
-                First personal project; a Java Swing stopwatch with start, stop, and reset functions. Includes a
-                shipped Windows installer (v1.1.5) available on GitHub.
+                Java Swing stopwatch with start, stop, and reset; 
+                ships as a packaged Windows installer (v1.1.5) available on GitHub
               </li>
             </ul>
           </div>

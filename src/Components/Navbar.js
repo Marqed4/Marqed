@@ -135,7 +135,7 @@ const Navbar = () => {
           />
         </a>
 
-        <Link to="/details" className="nav-btn"
+        <Link to="/Details" className="nav-btn"
           onMouseEnter={() => { setDetailsHovered(true); playOnlinePersona(); }}
           onMouseLeave={() => { setDetailsHovered(false); stopHoverAudio(); }}
           onClick={stopHoverAudio}
