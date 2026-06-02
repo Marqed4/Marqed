@@ -48,7 +48,7 @@ const Projects = () => {
             {ProjectsArray.map((project) => (
             <a
                 key={project.id}
-                href={"/" + project.title.toLowerCase()}
+                href={"/" + project.title}
                 className="project-card"
                 >
                 <img

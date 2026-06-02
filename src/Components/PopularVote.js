@@ -120,11 +120,17 @@ const PopularVote = () => {
       <Navbar />
 
       <h1>
-        <img
-          src={PopularVoteName}
-          className="popularvote-calendar-name"
-          alt="𝑃𝑜𝑝𝑢𝑙𝑎𝑟𝑉𝑜𝑡𝑒"
-        />
+        <a
+          href="https://github.com/Marqed4/PopularVote"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={PopularVoteName}
+            className="popularvote-calendar-name"
+            alt="𝑃𝑜𝑝𝑢𝑙𝑎𝑟𝑉𝑜𝑡𝑒"
+          />
+        </a>
       </h1>
 
       <p className="popular-vote-description">Anonymous questions, collectively surfaced.</p>

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 
-// import CalisighLogo from "../resources/art/calisigh page graphics/icon.png"
 import CalisighName from "../resources/art/calisigh page graphics/Calisigh.gif"
 import Made from "../resources/art/Background Project/Gradients/Made Inactive.gif"
 import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
@@ -25,8 +24,20 @@ const Calsigh = () => {
   return (
     <div className="custom-calendar-container">
       <Navbar/>
-      {/* <h1><img src={CalisighLogo} className="custom-calendar-logo" alt="CalsighLogo"/></h1> */}
-      <h1><img src={CalisighName} className="custom-calendar-name" alt="CalsighName"/></h1>
+      {/* TODO: Don't leave the entire header as clickable*/}
+      <h1>
+        <a
+          href="https://github.com/Marqed4/Calisigh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <img src={CalisighName}
+          className="custom-calendar-name"
+          alt="CalsighName"
+          />
+        </a>
+      </h1>
 
       <div className="app-controls-section">
         <p className="app-controls-docs-label">App Controls</p>
