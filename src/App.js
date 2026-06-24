@@ -36,6 +36,10 @@ import Calisigh from "./Components/Calisigh.js";
 import './Components/PopularVote.css';
 import PopularVote from "./Components/PopularVote.js";
 
+// <---- Time Rabbit Proj Page ---->
+import './Components/TimeRabbit.css';
+import TimeRabbit from "./Components/TimeRabbit.js";
+
 // <---- Resume Page ---->
 import './Components/Resume.css';
 import Resume from "./Components/Resume";
@@ -50,14 +54,15 @@ const App = () => (
   <>
     <img src={DefaultBackground} alt="" className="home-bg" />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/details" element={<Details />} />
-      <Route path="/Resume" element={<Resume />} />
-      <Route path="/Projects" element={<Projects />} />
-      <Route path="/Calisigh" element={<Calisigh />} />
-      <Route path="/PopularVote" element={<PopularVote />} />
-      <Route path="/Sudoku" element={<Sudoku />} />
-      <Route path="*" element={<UnfoundPage />} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/details" element={<Details/>} />
+      <Route path="/Resume" element={<Resume/>} />
+      <Route path="/Projects" element={<Projects/>} />
+      <Route path="/Calisigh" element={<Calisigh/>} />
+      <Route path="/PopularVote" element={<PopularVote/>} />
+      <Route path="/Sudoku" element={<Sudoku/>} />
+      <Route path="/TimeRabbit" element={<TimeRabbit/>} />
+      <Route path="*" element={<UnfoundPage/>} />
     </Routes>
   </>
 );

@@ -9,36 +9,33 @@ import ProjectsActive from "../resources/art/projects page graphics/Projects Act
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
 import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
 import SudokuLogo from "../resources/art/sudoku page graphics/Favicon.png"
+import TimeRabbitLogo from "../resources/art/time rabbit page graphics/Time_Rabbit.png"
 
 const ProjectsArray = [
   {
     id: 1,
     logo: CalisighLogo,
     title: "Calisigh",
-    description:
-  "A feature‑rich Midwestern-emo calendar\n" +
+    description: "A feature‑rich Midwestern-emo calendar\n" +
   "Open it, add your events, choose your themes, and self-loath...",
   },
   {
     id: 2,
     logo: PopularVoteLogo,
     title: "PopularVote",
-    description:
-  "Private query session w/ AI forked clustering/condensing\n",
+    description: "Private query session w/ AI forked clustering/condensing\n",
   },
     {
     id: 3,
     logo: SudokuLogo,
     title: "Sudoku",
-    description:
-  "A full‑stack Sudoku solver, scanner, and generator\n",
+    description: "A full‑stack Sudoku solver, scanner, and generator\n",
   },
   {
     id: 3,
-    logo: PopularVoteLogo,
-    title: "Time Rabbit",
-    description:
-  "A simple stopwatch app\n",
+    logo: TimeRabbitLogo,
+    title: "TimeRabbit",
+    description: "A simple stopwatch app\n",
   },
 ];
 // Each title will be sub folder
