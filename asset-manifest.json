@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8e6fea4.css",
-    "main.js": "/static/js/main.472695f3.js",
+    "main.css": "/static/css/main.74097b9d.css",
+    "main.js": "/static/js/main.4ef5a18a.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -31,6 +31,7 @@
     "static/media/YouTube Inactive.gif": "/static/media/YouTube Inactive.233842c28ee82a6dcfe7.gif",
     "static/media/Settings View.png": "/static/media/Settings View.fdb0ab1f8dd164afff0b.png",
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
+    "static/media/Time_Rabbit.png": "/static/media/Time_Rabbit.69d41f424d443038e3f8.png",
     "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
     "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.083b6cfb3e87b1ef8501.gif",
     "static/media/Favicon.png": "/static/media/Favicon.fe786262cff3816c9137.png",
@@ -70,16 +71,17 @@
     "static/media/Duplicate Date Selection.png": "/static/media/Duplicate Date Selection.14e742e5ef68ac8fdfaa.png",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
+    "static/media/view_app.png": "/static/media/view_app.982c2e79a5daec92c81d.png",
     "static/media/footer_infinity.gif": "/static/media/footer_infinity.a6f4bf38a64eff2b545e.gif",
     "static/media/icon.png": "/static/media/icon.fa92551046846438d18d.png",
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.e8e6fea4.css.map": "/static/css/main.e8e6fea4.css.map",
-    "main.472695f3.js.map": "/static/js/main.472695f3.js.map"
+    "main.74097b9d.css.map": "/static/css/main.74097b9d.css.map",
+    "main.4ef5a18a.js.map": "/static/js/main.4ef5a18a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8e6fea4.css",
-    "static/js/main.472695f3.js"
+    "static/css/main.74097b9d.css",
+    "static/js/main.4ef5a18a.js"
   ]
 }
