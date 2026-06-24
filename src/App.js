@@ -24,6 +24,10 @@ import Home from "./Components/Home";
 import './Components/Details.css';
 import Details from "./Components/Details";
 
+// <---- Sudoku Proj Page ---->
+import './Components/SolveSudoku.css';
+import Sudoku from "./Components/SolveSudoku.js";
+
 // <---- Custom Calendar Proj Page ---->
 import './Components/Calisigh.css';
 import Calisigh from "./Components/Calisigh.js";
@@ -52,6 +56,7 @@ const App = () => (
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Calisigh" element={<Calisigh />} />
       <Route path="/PopularVote" element={<PopularVote />} />
+      <Route path="/Sudoku" element={<Sudoku />} />
       <Route path="*" element={<UnfoundPage />} />
     </Routes>
   </>

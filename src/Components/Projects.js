@@ -8,6 +8,7 @@ import ProjectsActive from "../resources/art/projects page graphics/Projects Act
 
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
 import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
+import SudokuLogo from "../resources/art/sudoku page graphics/Favicon.png"
 
 const ProjectsArray = [
   {
@@ -24,6 +25,13 @@ const ProjectsArray = [
     title: "PopularVote",
     description:
   "Private query session w/ AI forked clustering/condensing\n",
+  },
+    {
+    id: 3,
+    logo: SudokuLogo,
+    title: "Sudoku",
+    description:
+  "A full‑stack Sudoku solver, scanner, and generator\n",
   },
   {
     id: 3,
