@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a4fa539.css",
-    "main.js": "/static/js/main.e2f7da28.js",
+    "main.css": "/static/css/main.32f35543.css",
+    "main.js": "/static/js/main.472695f3.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -33,7 +33,7 @@
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
     "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
     "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.083b6cfb3e87b1ef8501.gif",
-    "static/media/Favicon.png": "/static/media/Favicon.954af5d5a7c3e07c8854.png",
+    "static/media/Favicon.png": "/static/media/Favicon.fe786262cff3816c9137.png",
     "static/media/Hide Shorts Active.gif": "/static/media/Hide Shorts Active.1beda100b563d0e72e19.gif",
     "static/media/Shorts Navbar Active.gif": "/static/media/Shorts Navbar Active.452da1ec1ecfbecbb188.gif",
     "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
@@ -45,6 +45,7 @@
     "static/media/Shorts Navbar Inactive.gif": "/static/media/Shorts Navbar Inactive.2235ceed25564ec83c16.gif",
     "static/media/Show Edits Inactive.gif": "/static/media/Show Edits Inactive.68e44fd9296d2c48fdb0.gif",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
+    "static/media/Screenshot_2026-06-21_092112.png": "/static/media/Screenshot_2026-06-21_092112.b7be353e48800212073e.png",
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
     "static/media/Editing Software Details Inactive.gif": "/static/media/Editing Software Details Inactive.b0e022715db76989a352.gif",
     "static/media/Hide Content Active.gif": "/static/media/Hide Content Active.c21f994244bf9efac8c9.gif",
@@ -53,6 +54,7 @@
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
     "static/media/Architecture Inactive.gif": "/static/media/Architecture Inactive.69b48919b32edc538d51.gif",
+    "static/media/Screenshot_2026-06-21_034200.png": "/static/media/Screenshot_2026-06-21_034200.1d31aa924d0c56a14923.png",
     "static/media/Projects Active.gif": "/static/media/Projects Active.05db97ae2891d0f734fe.gif",
     "static/media/Chat View.png": "/static/media/Chat View.0887dad6ef97961c2cc7.png",
     "static/media/Gallery Active.gif": "/static/media/Gallery Active.bb71585201b1c80b6ca7.gif",
@@ -70,15 +72,14 @@
     "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
     "static/media/footer_infinity.gif": "/static/media/footer_infinity.a6f4bf38a64eff2b545e.gif",
     "static/media/icon.png": "/static/media/icon.fa92551046846438d18d.png",
-    "static/media/Made Inactive.gif": "/static/media/Made Inactive.da9e19063538fdb3d0d4.gif",
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.4a4fa539.css.map": "/static/css/main.4a4fa539.css.map",
-    "main.e2f7da28.js.map": "/static/js/main.e2f7da28.js.map"
+    "main.32f35543.css.map": "/static/css/main.32f35543.css.map",
+    "main.472695f3.js.map": "/static/js/main.472695f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4fa539.css",
-    "static/js/main.e2f7da28.js"
+    "static/css/main.32f35543.css",
+    "static/js/main.472695f3.js"
   ]
 }
