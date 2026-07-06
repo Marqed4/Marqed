@@ -48,9 +48,9 @@ const Home = () => {
           <div className="home-card">
             <p>
             Hey, I’m Zach! Most people online know me as Marqed.<br /><br />
-            This is my personal website, where I share my work and projects as an aspiring professional developer & video editor.<br /><br />
+            This is my personal website, where I share my work and projects as an aspiring professional developer.<br /><br />
             
-            On this site, you can find a selection of my video edits, as well as some of my coding projects and other creative endeavors.
+            On this site, you can find a broad selection of personal/joint coding projects and other creative endeavors.
             </p>
           </div>
           <div className="home-card">

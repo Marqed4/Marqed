@@ -31,9 +31,9 @@ const Details = () => {
                 <img src={ContactDetailsInactive} className="contacts-header" alt="Contacts" />
               </h2>
               <p className="contacts-body">
-                School Email: zachery.francis28@bcmail.cuny.edu<br/>
-                Professional Email: zacherywfrancis@gmail.com<br/>
-                Video Editing Email: marqers7@gmail.com
+                // Hyperlink the email/mailto:
+                Prof: zacherywfrancis@gmail.com <br/>
+                Freelance: marqers7@gmail.com
               </p>
             </div>
 
@@ -60,7 +60,8 @@ const Details = () => {
               </h2>
               <p className="education-body">
                 Brooklyn College<br/>
-                • B.S. in Information Systems<br/><br/>
+                • B.S. in Information Systems, Minor: Computer Science<br/>
+                • B.S. in Business Management<br/><br/>
                 Kingsborough Community College<br/>
                 • A.A. in Liberal Arts
               </p>
@@ -96,17 +97,9 @@ const Details = () => {
               <img src={InterestsDetailsInactive} className="interests-header" alt="interests" />
             </h2>
             <p className="interests-body">
-              I love creating video edits that radiate an elevated sense of skill and creative vision.
-              The kind of effervescence that turns a great "play" into an iconic moment.
-              <br/><br/>
-              The thing is, for me editing & programming are an expression of self.
-              It isn't conformity... so what is it? It's application, maybe indentation.
-              The world I'd like to live in... the way I want to be noticed.
-              It's all much, much more than just utility!
-              <br/><br/>
-              Technology comes naturally because it's the toolset that lets me shape ideas,
-              refine my style, and show real expertise through the work I put out.
-              It feels amazing to build projects, to service a purpose, or reveal new ones.
+            To me, programming and technology serve as excellent tools through which I can express myself and be creative.<br/>
+            In particular, when it comes to coding, I see it not only as a tool but also as an opportunity to resolve challenging issues and create something using my personal style in programming.<br/>
+            Technology suits me well because I have all the necessary instruments that I need for creating.
             </p>
           </div>
 

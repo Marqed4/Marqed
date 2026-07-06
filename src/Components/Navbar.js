@@ -151,7 +151,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="dropdown-container"
+        {/* <div className="dropdown-container"
           onMouseEnter={() => { setYoutubeHovered(true); playSpell(); }}
           onMouseLeave={() => { setYoutubeHovered(false); stopHoverAudio(); }}
         >
@@ -196,7 +196,7 @@ const Navbar = () => {
               />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <a href="https://github.com/Marqed4" className="nav-btn"
           onMouseEnter={() => { setGithubHovered(true); playLeni(); }}
@@ -248,7 +248,7 @@ const Navbar = () => {
               hovered={detailsHovered}
             />
           </Link>
-          <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
+          {/* <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
               labelActive={YoutubeNavbarActive}
               labelInactive={YoutubeNavbarInactive}
@@ -258,7 +258,7 @@ const Navbar = () => {
               iconClass="youtube-link-icon"
               hovered={youtubeHovered}
             />
-          </a>
+          </a> */}
           <a href="https://github.com/Marqed4" className="nav-btn" onClick={() => setMenuOpen(false)}>
             <NavItem
               labelActive={GithubNavbarActive}
