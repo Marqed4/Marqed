@@ -24,6 +24,18 @@ import Home from "./Components/Home";
 import './Components/Details.css';
 import Details from "./Components/Details";
 
+// <---- Projects Page ---->
+import './Components/Projects.css';
+import Projects from "./Components/Projects";
+
+// <---- Gallery Page ---->
+import './Components/Gallery.css';
+import Gallery from "./Components/Gallery";
+
+// <---- Resume Page ---->
+import './Components/Resume.css';
+import Resume from "./Components/Resume";
+
 // <---- Sudoku Proj Page ---->
 import './Components/SolveSudoku.css';
 import Sudoku from "./Components/SolveSudoku.js";
@@ -40,14 +52,6 @@ import PopularVote from "./Components/PopularVote.js";
 import './Components/TimeRabbit.css';
 import TimeRabbit from "./Components/TimeRabbit.js";
 
-// <---- Resume Page ---->
-import './Components/Resume.css';
-import Resume from "./Components/Resume";
-
-// <---- Projects Page ---->
-import './Components/Projects.css';
-import Projects from "./Components/Projects";
-
 import DefaultBackground from "./resources/art/Background Project/Gradients/Site.gif";
 
 const App = () => (
@@ -55,9 +59,10 @@ const App = () => (
     <img src={DefaultBackground} alt="" className="home-bg" />
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/details" element={<Details/>} />
+      <Route path="/Details" element={<Details/>} />
       <Route path="/Resume" element={<Resume/>} />
       <Route path="/Projects" element={<Projects/>} />
+      <Route path="/Gallery" element={<Gallery/>} />
       <Route path="/Calisigh" element={<Calisigh/>} />
       <Route path="/PopularVote" element={<PopularVote/>} />
       <Route path="/Sudoku" element={<Sudoku/>} />

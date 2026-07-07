@@ -1,13 +1,52 @@
-import { useEffect } from "react";
 import Navbar from "./Navbar.js";
+import Footer from "./Footer.jsx"
 import "./Gallery.css";
 
-import GalleryInactive from "../resources/art/projects page graphics/Gallery Inactive.gif"
-import GalleryActive from "../resources/art/projects page graphics/Gallery Active.gif"
+import GalleryInactive from "../resources/art/gallery page graphics/Gallery Inactive.gif"
+import GalleryActive from "../resources/art/gallery page graphics/Gallery Active.gif"
 
-const ProjectsArray = [];
+import { PetGallery }  from "../resources/art/gallery page graphics/index.js";
 
-const Gallery = () => {};
+const PetsArray = [
+    { id: "IMG_0510", image: PetGallery.IMG_0510, description: "Why is maggy such a sassy gal!?"}, 
+    { id: "IMG_0529", image: PetGallery.IMG_0528, description: "Like... two peas in a pod."}, 
+    { id: "IMG_0987", image: PetGallery.IMG_0987, description: "Diva 💅" },
+];
+
+// Each photo will contain it's own data (picture and description).
+const Gallery = () => {
+    return (
+        <>
+            <Navbar />
+            <div className="gallery-page">
+                <img src={GalleryInactive}
+                className="gallery-header"
+                alt="Gallery"
+                />
+                <div className="gallery-grid">
+                    {PetsArray.map((media) => (
+                        <a
+                        key={media.id}
+                        className="gallery-card"
+                        >
+                            <div className="gallery-image-wrapper">
+                                <img
+                                src={media.image} 
+                                className={`${media.id.toLowerCase()} gallery-image`}
+                                />
+                                <h2 className="gallery-name">{media.title}</h2>
+                                <p className={`${media.id.toLowerCase()} gallery-description`}>
+                                    {media.description}
+                                </p>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            </div>
+            <Footer/>
+        </>
+    );
+};
 
 export default Gallery;
 export { GalleryInactive, GalleryActive };
