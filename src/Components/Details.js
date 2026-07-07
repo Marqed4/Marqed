@@ -10,11 +10,25 @@ import EditingSoftwareDetailsInactive from "../resources/art/details page graphi
 import CodingLangFrameworkDetailsInactive from "../resources/art/details page graphic header/Tech Stack.gif"
 import ResumeDetailsInactive from "../resources/art/details page graphic header/Resume Details Inactive.gif"
 
+function copyTextFn(text) {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value).then(() => {
+  alert("Copied the text: " + copyText.value);
+  });
+}
+
+var freelanceEmail = "marqers7@gmail.com";
+var professionalEmail = "zacherywfrancis@gmail.com";
+
 const Details = () => {
 
   useEffect(() => {
     document.title = "Marqed's Details";
   }, []);
+
+  // Hyperlink the email/mailto:
 
   return (
     <>
@@ -31,9 +45,9 @@ const Details = () => {
                 <img src={ContactDetailsInactive} className="contacts-header" alt="Contacts" />
               </h2>
               <p className="contacts-body">
-                // Hyperlink the email/mailto:
-                Prof: zacherywfrancis@gmail.com <br/>
-                Freelance: marqers7@gmail.com
+                <button onclick="copyTextFn(freelanceEmail)" className="copy-button">📋 <u>Professional Email</u></button><br/>
+                <button onclick="copyTextFn(freelanceEmail)" className="copy-button">📋 <u>Freelance Email</u></button><br/>
+                <a href="https://www.linkedin.com/in/zachery-francis/">Visit Linkedin</a>
               </p>
             </div>
 
@@ -73,7 +87,6 @@ const Details = () => {
               </h2>
               <p className="coding-lang-framworks-body">
                 • Java / Oracle JDK 23/25<br/>
-                • C# / Microsoft Dotnet 9.0<br/>
                 • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
                 • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
               </p>

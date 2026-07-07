@@ -9,6 +9,21 @@
   100% { transform: translateY(0); }
 }
 
+.copy-button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.copy-button:hover {
+  -webkit-text-stroke: 1px rgba(9, 255, 0, 0.034);
+  color: rgba(0, 128, 0, 0.466);
+}
+
 .details-container {
   padding-top: 100px;
   padding-bottom: 40px;
@@ -145,7 +160,7 @@
   font-size: 1rem;
   line-height: 1.7;
   font-weight: 225;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   margin-top: 0;
 }
 
