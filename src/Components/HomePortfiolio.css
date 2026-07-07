@@ -13,13 +13,13 @@
 
 .portfolio-container-projects span,
 .portfolio-container-gallery span {
-  width: 225px;
+  width: 200px;
   overflow: hidden;
 }
 
 .projects-button,
 .gallery-button {
-  width: 200px;
+  width: 175px;
   height: auto;
   display: block;
 }
