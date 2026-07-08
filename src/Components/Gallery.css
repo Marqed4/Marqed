@@ -32,6 +32,7 @@
   max-width: 300px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
 }
 
 .gallery-card:hover {
@@ -58,6 +59,14 @@
     height: 350px;
 }
 
+.img_1213.gallery-image {
+  height: 350px;
+}
+
+.img_1222.gallery-image {
+  height: 235px;
+}
+
 .gallery-gif {
   width: auto;
   height: 160px;
@@ -76,6 +85,8 @@
   font-weight: 225;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
   margin-top: 0;
+  /* Apparently this renders new lines... */
+  white-space: pre-line;
 }
 
 h1 a {

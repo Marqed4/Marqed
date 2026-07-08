@@ -10,17 +10,14 @@ import EditingSoftwareDetailsInactive from "../resources/art/details page graphi
 import CodingLangFrameworkDetailsInactive from "../resources/art/details page graphic header/Tech Stack.gif"
 import ResumeDetailsInactive from "../resources/art/details page graphic header/Resume Details Inactive.gif"
 
-function copyTextFn(text) {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value).then(() => {
-  alert("Copied the text: " + copyText.value);
+function copy(text) {
+  navigator.clipboard.writeText(text).then(() => {
+  alert("Copied: " + text);
   });
 }
 
-var freelanceEmail = "marqers7@gmail.com";
-var professionalEmail = "zacherywfrancis@gmail.com";
+let profEmail   = "zacherywfrancis@gmail.com"
+let freelEemail = "marqers7@gmail.com";
 
 const Details = () => {
 
@@ -45,8 +42,8 @@ const Details = () => {
                 <img src={ContactDetailsInactive} className="contacts-header" alt="Contacts" />
               </h2>
               <p className="contacts-body">
-                <button onclick="copyTextFn(freelanceEmail)" className="copy-button">📋 <u>Professional Email</u></button><br/>
-                <button onclick="copyTextFn(freelanceEmail)" className="copy-button">📋 <u>Freelance Email</u></button><br/>
+                <button onClick={() => copy(profEmail)} className="copy-button">📋 <u>Professional Email</u></button><br/>
+                <button onClick={() => copy(freelEemail)} className="copy-button">📋 <u>Freelance Email</u></button><br/>
                 <a href="https://www.linkedin.com/in/zachery-francis/">Visit Linkedin</a>
               </p>
             </div>

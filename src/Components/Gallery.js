@@ -8,9 +8,11 @@ import GalleryActive from "../resources/art/gallery page graphics/Gallery Active
 import { PetGallery }  from "../resources/art/gallery page graphics/index.js";
 
 const PetsArray = [
-    { id: "IMG_0510", image: PetGallery.IMG_0510, description: "Why is maggy such a sassy gal!?"}, 
-    { id: "IMG_0529", image: PetGallery.IMG_0528, description: "Like... two peas in a pod."}, 
+    { id: "IMG_0510", image: PetGallery.IMG_0510, description: "Why is Maggie such a sassy gal!?"}, 
+    { id: "IMG_0529", image: PetGallery.IMG_0528, description: "Like... two peas in a pod.\nMaggie & Lisa!"}, 
     { id: "IMG_0987", image: PetGallery.IMG_0987, description: "Diva 💅" },
+    { id: "IMG_1213", image: PetGallery.IMG_1213, description: "off-guard flick" },
+    { id: "IMG_1222", image: PetGallery.IMG_1222, description: "You mirin' brah? 😺" },
 ];
 
 // Each photo will contain it's own data (picture and description).
