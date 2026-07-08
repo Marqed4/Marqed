@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4567127.css",
-    "main.js": "/static/js/main.da65f9ba.js",
+    "main.css": "/static/css/main.897a04f4.css",
+    "main.js": "/static/js/main.0931bc8f.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -55,6 +55,7 @@
     "static/media/Popular Vote.gif": "/static/media/Popular Vote.820f8d68815365a27f74.gif",
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
+    "static/media/IMG_1222.jpg": "/static/media/IMG_1222.3bae278f1dcf26a1b57b.jpg",
     "static/media/Architecture Inactive.gif": "/static/media/Architecture Inactive.69b48919b32edc538d51.gif",
     "static/media/Screenshot_2026-06-21_034200.png": "/static/media/Screenshot_2026-06-21_034200.1d31aa924d0c56a14923.png",
     "static/media/Projects Active.gif": "/static/media/Projects Active.05db97ae2891d0f734fe.gif",
@@ -74,17 +75,18 @@
     "static/media/Duplicate Date Selection.png": "/static/media/Duplicate Date Selection.14e742e5ef68ac8fdfaa.png",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
+    "static/media/IMG_1213.jpg": "/static/media/IMG_1213.ee7a24cbc6105214ca9b.jpg",
     "static/media/view_app.png": "/static/media/view_app.982c2e79a5daec92c81d.png",
     "static/media/footer_infinity.gif": "/static/media/footer_infinity.a6f4bf38a64eff2b545e.gif",
     "static/media/icon.png": "/static/media/icon.fa92551046846438d18d.png",
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.d4567127.css.map": "/static/css/main.d4567127.css.map",
-    "main.da65f9ba.js.map": "/static/js/main.da65f9ba.js.map"
+    "main.897a04f4.css.map": "/static/css/main.897a04f4.css.map",
+    "main.0931bc8f.js.map": "/static/js/main.0931bc8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4567127.css",
-    "static/js/main.da65f9ba.js"
+    "static/css/main.897a04f4.css",
+    "static/js/main.0931bc8f.js"
   ]
 }
