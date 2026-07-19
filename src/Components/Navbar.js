@@ -62,7 +62,7 @@ const Navbar = () => {
   const [musicEnabled, setMusicEnabled] = useState(() => {
   const stored = localStorage.getItem("musicEnabled");
   return stored === null ? true : stored === "true";
-});
+  });
 
   const SpellRef = useRef(null);
   const GospelRef = useRef(null);
