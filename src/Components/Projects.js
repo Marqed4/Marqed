@@ -76,11 +76,11 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="external-link-btn"
+                    className="external-link-btn external-btn-slot-1"
                   >
                     <img
                       src={ExternalLinkButton}
-                      className="external-link-btn"
+                      className="external-link-btn external-btn-slot-1"
                     />
                   </a>
                 )}
@@ -91,11 +91,11 @@ const Projects = () => {
                     href={project.repository}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="external-repo-btn"
+                    className={`external-repo-btn ${project.link ? "external-btn-slot-2" : "external-btn-slot-1"}`}
                   >
                     <img
                       src={ExternalRepoButton}
-                      className="external-repo-btn"
+                      className={`external-repo-btn ${project.link ? "external-btn-slot-2" : "external-btn-slot-1"}`}
                     />
                   </a>
                 )}
