@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.26f1b820.css",
-    "main.js": "/static/js/main.717f74fd.js",
+    "main.css": "/static/css/main.9b515ecf.css",
+    "main.js": "/static/js/main.b48adba3.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
     "static/media/participants-view.gif": "/static/media/participants-view.3c958b5c17638e6a4b69.gif",
     "static/media/Music On.gif": "/static/media/Music On.80686fcbd78ad1954ed1.gif",
+    "static/media/External Repo Button.gif": "/static/media/External Repo Button.1b02c0b19660f994b137.gif",
     "static/media/Participant-Scroll-Down.gif": "/static/media/Participant-Scroll-Down.bf0f51566fb0734f2473.gif",
+    "static/media/External Link Button.gif": "/static/media/External Link Button.3246276c5f81cc4514a0.gif",
     "static/media/open-session.gif": "/static/media/open-session.93cb2e36a3efa8aa4f8e.gif",
     "static/media/Main-Page-Theme-Preview.gif": "/static/media/Main-Page-Theme-Preview.c2b727b9ae6b81591c08.gif",
     "static/media/landing-page.gif": "/static/media/landing-page.aa7390eb43d4773d1f0b.gif",
@@ -84,11 +86,11 @@
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.26f1b820.css.map": "/static/css/main.26f1b820.css.map",
-    "main.717f74fd.js.map": "/static/js/main.717f74fd.js.map"
+    "main.9b515ecf.css.map": "/static/css/main.9b515ecf.css.map",
+    "main.b48adba3.js.map": "/static/js/main.b48adba3.js.map"
   },
   "entrypoints": [
-    "static/css/main.26f1b820.css",
-    "static/js/main.717f74fd.js"
+    "static/css/main.9b515ecf.css",
+    "static/js/main.b48adba3.js"
   ]
 }
