@@ -5,6 +5,34 @@
   padding: 60px 20px;
 }
 
+.project-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.external-link-btn {
+  position: absolute;
+  top: 10px;
+  right: -8.5px;
+  cursor: pointer;
+  height: 35px;
+  width: auto;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.external-repo-btn {
+  position: absolute;
+  top: 35px;
+  right: -8.5px;
+  cursor: pointer;
+  height: 35px;
+  width: auto;
+  z-index: 10;
+  pointer-events: auto;
+}
+
 .projects-title {
   margin-bottom: 48px;
   font-size: 2rem;
@@ -33,6 +61,8 @@
   max-width: 300px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  z-index: 1;
 }
 
 .project-card:hover {

@@ -6,34 +6,48 @@ import "./Projects.css";
 import ProjectsInactive from "../resources/art/projects page graphics/Projects Inactive.gif"
 import ProjectsActive from "../resources/art/projects page graphics/Projects Active.gif"
 
+import ExternalLinkButton from "../resources/art/projects page graphics/External Link Button.gif"
+import ExternalRepoButton from "../resources/art/projects page graphics/External Repo Button.gif"
+
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
 import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
 import SudokuLogo from "../resources/art/sudoku page graphics/Favicon.png"
 import TimeRabbitLogo from "../resources/art/time rabbit page graphics/Time_Rabbit.png"
 
+// Currently mentioned project list. 
 const ProjectsArray = [
+  // Calisigh
   {
     id: 1,
     logo: CalisighLogo,
     title: "Calisigh",
+    repository: "https://github.com/Marqed4/Calisigh",
     description: "A feature‑rich Midwestern-emo calendar\n" +
     "Open it, add your events, choose your themes, and self-loath...",
   },
+  // PopularVote
   {
     id: 2,
     logo: PopularVoteLogo,
+    link: "https://popularvote.marqed.it",
+    repository: "https://github.com/Marqed4/PopularVote",
     title: "PopularVote",
     description: "Private query session w/ AI forked clustering/condensing\n",
   },
-    {
+  // Sudoku
+  {
     id: 3,
     logo: SudokuLogo,
+    link: "https://sudoku.marqed.it",
+    repository: "https://github.com/Marqed4/Sudoku",
     title: "Sudoku",
     description: "A full‑stack Sudoku solver, scanner, and generator\n",
   },
+  // Time Rabbit
   {
     id: 3,
     logo: TimeRabbitLogo,
+    repository: "https://github.com/Marqed4/TimeRabbit",
     title: "TimeRabbit",
     description: "A simple stopwatch app\n",
   },
@@ -55,24 +69,53 @@ const Projects = () => {
         />
         <div className="projects-grid">
             {ProjectsArray.map((project) => (
-              <a
-              key={project.id}
-              href={"/" + project.title}
-              className="project-card"
-              >
-                <img
-                src={project.logo}
-                alt={project.title + "-logo"}
-                className="project-logo"
-                />
-                <h2 className="project-name">
-                  {project.title}
-                </h2>
-                <p className="project-description">
-                  {project.description}
-                </p>
-            </a>
-          ))}
+              <div key={project.id} className="project-wrapper">
+                {/* Link to project website or standalone download page */}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="external-link-btn"
+                  >
+                    <img
+                      src={ExternalLinkButton}
+                      className="external-link-btn"
+                    />
+                  </a>
+                )}
+
+                {/* Link to project repository */}
+                {project.repository && (
+                  <a
+                    href={project.repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="external-repo-btn"
+                  >
+                    <img
+                      src={ExternalRepoButton}
+                      className="external-repo-btn"
+                    />
+                  </a>
+                )}
+
+                {/* Project title, logo, and description */}
+                <a
+                  href={"/" + project.title}
+                  className="project-card"
+                >
+                  <img
+                    src={project.logo}
+                    alt={project.title + "-logo"}
+                    className="project-logo"
+                  />
+                  <h2 className="project-name">{project.title}</h2>
+                  <p className="project-description">{project.description}</p>
+                </a>
+                
+              </div>
+            ))}
         </div>
       </div>
       <Footer />
