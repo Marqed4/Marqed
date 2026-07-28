@@ -58,7 +58,9 @@ Each project will contain it's own data.
 Redirecting the user to a page with more about that project.
 */
 const Projects = () => {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    document.title = "Marqed's Projects";
+  }, []);
   return (
     <>
       <Navbar />

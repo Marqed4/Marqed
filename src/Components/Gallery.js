@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "./Navbar.js";
 import Footer from "./Footer.jsx"
 import "./Gallery.css";
@@ -19,6 +20,9 @@ const PetsArray = [
 
 // Each photo will contain it's own data (picture and description).
 const Gallery = () => {
+      useEffect(() => {
+        document.title = "Marqed's Gallery";
+      }, []);
     return (
         <>
             <Navbar />
