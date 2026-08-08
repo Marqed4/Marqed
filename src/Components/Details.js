@@ -86,6 +86,8 @@ const Details = () => {
                 • Java / Oracle JDK 23/25<br/>
                 • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
                 • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+                • Rust 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+                • SQL / PostgreSQL<br/>
               </p>
             </div>
 
