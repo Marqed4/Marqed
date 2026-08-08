@@ -83,11 +83,11 @@ const Details = () => {
                 <img src={CodingLangFrameworkDetailsInactive} className="coding-lang-framworks-header" alt="CodingLangFrameworks" />
               </h2>
               <p className="coding-lang-framworks-body">
-                • Java / Oracle JDK 23/25<br/>
-                • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
-                • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
-                • Rust 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
-                • SQL / PostgreSQL<br/>
+                <span className="skill-line">• Java / Oracle JDK 23/25</span><br/>
+                <span className="skill-line">• Python / Python 3.13 <span className="studying-tag">Studying</span></span><br/>
+                <span className="skill-line">• React / React 11.9 (HTML, JS, CSS) <span className="studying-tag">Studying</span></span><br/>
+                <span className="skill-line">• Rust <span className="studying-tag">Studying</span></span><br/>
+                <span className="skill-line">• SQL / PostgreSQL <span className="studying-tag">Studying</span></span><br/>
               </p>
             </div>
 
