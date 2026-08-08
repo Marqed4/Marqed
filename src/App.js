@@ -52,6 +52,10 @@ import PopularVote from "./Components/PopularVote.js";
 import './Components/TimeRabbit.css';
 import TimeRabbit from "./Components/TimeRabbit.js";
 
+// <---- CodePath Page (url-only, no nav link) ---->
+import './Components/CodePath.css';
+import CodePath from "./Components/CodePath.js";
+
 import DefaultBackground from "./resources/art/Background Project/Gradients/Site.gif";
 
 const App = () => (
@@ -67,6 +71,7 @@ const App = () => (
       <Route path="/PopularVote" element={<PopularVote/>} />
       <Route path="/Sudoku" element={<Sudoku/>} />
       <Route path="/TimeRabbit" element={<TimeRabbit/>} />
+      <Route path="/CodePath" element={<CodePath/>} />
       <Route path="*" element={<UnfoundPage/>} />
     </Routes>
   </>
